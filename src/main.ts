@@ -1,0 +1,10 @@
+import "./components/dropdown"
+import "./components/accordion"
+import "./components/modal"
+import "./components/mask"
+import "./components/burger"
+import "./components/swiper"
+import "./components/review"
+import "./components/contacts-form"
+
+import "./style.css"

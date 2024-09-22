@@ -1,0 +1,138 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: "Inter Light";
+    src:
+      url("/fonts/Inter/Inter-Light.woff2") format("woff2"),
+      url("/fonts/Inter/Inter-Light.woff") format("woff");
+    font-weight: 300;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "Inter Regular";
+    src:
+      url("/fonts/Inter/Inter-Regular.woff2") format("woff2"),
+      url("/fonts/Inter/Inter-Regular.woff") format("woff");
+    font-weight: 400;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "Inter Medium";
+    src:
+      url("/fonts/Inter/Inter-Medium.woff2") format("woff2"),
+      url("/fonts/Inter/Inter-Medium.woff") format("woff");
+    font-weight: 500;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "Inter SemiBold";
+    src:
+      url("/fonts/Inter/Inter-SemiBold.woff2") format("woff2"),
+      url("/fonts/Inter/Inter-SemiBold.woff") format("woff");
+    font-weight: 600;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "Inter Bold";
+    src:
+      url("/fonts/Inter/Inter-Bold.woff2") format("woff2"),
+      url("/fonts/Inter/Inter-Bold.woff") format("woff");
+    font-weight: 700;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: "Avenir Regular";
+    src:
+      url("/fonts/Avenir/AvenirNextCyr-Regular.eot") format("embedded-opentype"),
+      url("/fonts/Avenir/AvenirNextCyr-Regular.otf") format("opentype"),
+      url("/fonts/Avenir/AvenirNextCyr-Regular.woff") format("woff");
+    font-weight: 400;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "Avenir Medium";
+    src:
+      url("/fonts/Avenir/AvenirNextCyr-Medium.eot") format("embedded-opentype"),
+      url("/fonts/Avenir/AvenirNextCyr-Medium.otf") format("opentype"),
+      url("/fonts/Avenir/AvenirNextCyr-Medium.woff") format("woff");
+    font-weight: 500;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "Avenir SemiBold";
+    src:
+      url("/fonts/Avenir/AvenirNextCyr-Demi.eot") format("embedded-opentype"),
+      url("/fonts/Avenir/AvenirNextCyr-Demi.otf") format("opentype"),
+      url("/fonts/Avenir/AvenirNextCyr-Demi.woff") format("woff");
+    font-weight: 700;
+    font-style: normal;
+  }
+}
+
+body {
+  @apply bg-black font-avenir-regular text-sm text-white sm:text-base;
+
+  .link {
+    @apply inline-flex items-center justify-center rounded-2xl font-avenir-medium text-sm outline-none transition-colors disabled:pointer-events-none disabled:opacity-30 sm:text-base;
+  }
+  .link-primary {
+    @apply bg-primary text-white shadow-shadow-primary hover:bg-hovered focus:bg-focused;
+  }
+  .link-secondary {
+    @apply border border-solid border-white text-white hover:bg-white hover:text-black focus:bg-secondary;
+  }
+  .link-tertiary {
+    @apply bg-white text-primary shadow-shadow-primary hover:text-hovered focus:bg-secondary focus:text-focused;
+  }
+
+  .menu-link {
+    @apply border-b border-solid border-stroke transition-colors hover:text-primary lg:border-none;
+  }
+  .section-title {
+    @apply font-avenir-semibold text-2xl sm:text-4xl;
+  }
+  .block-title {
+    @apply text-base sm:text-xl;
+  }
+
+  .swiper-pagination {
+    @apply select-none whitespace-nowrap text-base;
+  }
+  .swiper-button-prev,
+  .swiper-button-next {
+    @apply size-10 rounded-full bg-primary p-[13px] text-white;
+  }
+  .swiper-button-prev.swiper-button-disabled,
+  .swiper-button-next.swiper-button-disabled {
+    @apply opacity-30;
+  }
+
+  .pagination {
+    @apply mx-auto flex w-fit justify-between gap-1;
+  }
+  .pagination-list {
+    @apply flex items-center gap-1;
+  }
+  .pagination-text {
+    @apply flex size-10 items-center justify-center text-gray
+  }
+  .pagination-text.active {
+    @apply text-white
+  }
+  .pagination-link a {
+    @apply flex size-10 cursor-pointer items-center justify-center rounded-lg font-avenir-medium text-sm text-gray transition-colors hover:bg-gray hover:text-white;
+  }
+  .pagination-link.active a {
+    @apply bg-primary text-white hover:bg-hovered hover:text-white;
+  }
+  .pagination-btn {
+    @apply flex size-10 cursor-pointer select-none items-center justify-center rounded-lg font-avenir-medium text-sm text-gray transition-colors hover:text-primary;
+  }
+  .pagination-btn.disabled {
+    @apply pointer-events-none cursor-default text-stroke opacity-30;
+  }
+}
