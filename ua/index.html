@@ -74,21 +74,54 @@
           </a>
           <nav
             id="menu"
-            class="fixed inset-0 top-[49px] flex h-[calc(100vh-49px)] translate-x-full flex-col justify-between bg-black px-4 pb-6 pt-3 transition-transform sm:top-[81px] sm:h-[calc(100vh-81px)] lg:static lg:top-0 lg:h-fit lg:translate-x-0 lg:bg-transparent lg:p-0 [&.active]:translate-x-0"
+            class="fixed inset-0 top-[49px] flex h-[calc(100vh-49px)] translate-x-full flex-col justify-center gap-8 bg-black px-4 pb-6 pt-3 transition-transform sm:top-[81px] sm:h-[calc(100vh-81px)] lg:static lg:top-0 lg:h-fit lg:translate-x-0 lg:gap-10 lg:bg-transparent lg:p-0 [&.active]:translate-x-0"
           >
             <ul
-              class="flex h-fit flex-col lg:flex-row lg:items-center lg:justify-center lg:gap-10 lg:text-sm"
+              class="flex h-fit flex-col justify-center gap-8 lg:flex-row lg:items-center lg:gap-10"
             >
-              <li class="menu-link" data-menu-link>
-                <a href="/ua/tarifs" class="menu-link block py-3 lg:py-0">Тарифи</a>
+              <li class="text-center">
+                <a href="/ua/tarifs" class="menu-link" data-menu-link>Тарифи</a>
               </li>
-              <li class="menu-link" data-menu-link>
-                <a href="/ua/blog" class="menu-link block py-3 lg:py-0">Новини</a>
+              <li class="text-center">
+                <a href="/ua/blog" class="menu-link" data-menu-link>Новини</a>
               </li>
-              <li class="menu-link" data-menu-link>
-                <a href="/ua/contacts" class="menu-link block py-3 lg:py-0">Контакти</a>
+              <li class="text-center">
+                <a href="/ua/contacts" class="menu-link" data-menu-link>Контакти</a>
               </li>
             </ul>
+            <div class="mx-auto flex flex-col gap-4 lg:hidden">
+              <a href="/ua/sign-up" class="link link-primary h-10 w-full px-5"
+                >15 днів безкоштовного доступу
+              </a>
+            </div>
+            <svg
+              width="150"
+              height="122"
+              viewBox="0 0 150 122"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              class="absolute lg:hidden left-0 top-0"
+            >
+              <path
+                opacity="0.32"
+                d="M32.532 45.0549C-0.0078165 6.94551 -48.0109 -32.1346 -9.76953 -64.7871L-13.043 -85.3777C-66.1382 -40.0423 -39.5305 15.14 5.6275 68.0274C30.3975 97.0371 67.2601 113.209 105.328 112.066L107.108 121.754L150.004 85.1273L96.9434 66.4281L98.8431 76.7802C73.4033 75.997 49.1803 64.5528 32.532 45.0549Z"
+                fill="#444CE6"
+              />
+            </svg>
+            <svg
+              width="150"
+              height="119"
+              viewBox="0 0 150 119"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              class="absolute lg:hidden bottom-0 right-0"
+            >
+              <path
+                opacity="0.32"
+                d="M117.472 77.1589C150.012 115.268 198.015 154.348 159.773 187.001L163.047 207.592C216.142 162.256 189.534 107.074 144.376 54.1865C119.606 25.1768 82.7438 9.00473 44.6763 10.1478L42.8964 0.459644L0.000209526 37.0866L53.0605 55.7857L51.1608 45.4336C76.6007 46.2168 100.824 57.6611 117.472 77.1589Z"
+                fill="#444CE6"
+              />
+            </svg>
           </nav>
           <div class="flex items-center gap-6">
             <div class="relative" data-twe-dropdown-ref>
@@ -142,14 +175,11 @@
               </ul>
             </div>
             <div class="hidden lg:block">
-              <a
-                href="/sign-up"
-                target="_blank"
-                class="link link-secondary h-10 w-full px-5 sm:w-fit"
-                >Зареєструватись
+              <a href="/ua/sign-up" class="link link-primary h-10 w-full px-5 sm:w-fit"
+                >15 днів безкоштовного доступу
               </a>
             </div>
-            <a href="/sign-up" class="lg:hidden">
+            <a href="/ua/sign-up" class="lg:hidden">
               <svg
                 width="16"
                 height="18"
@@ -194,16 +224,14 @@
               >
                 <div class="w-full lg:max-w-[626px]">
                   <h1 class="mb-3 font-avenir-semibold text-4xl sm:mb-6 sm:text-5xl">
-                    Професійна CRM система для вашого бізнесу
+                    Професійна CRM система для товарного бізнесу
                   </h1>
                   <p class="mb-5 text-base text-secondary sm:mb-10 sm:text-xl">
-                    Прокачайте свій бізнес за допомогою професійної CRM платформи. Ми впевнені в
-                    якості та надійності нашого продукту.
+                    Керуйте бізнесом, а не процесами –
+                    <span class="font-avenir-semibold">ProfiCRM</span> зробить все за вас. Ми
+                    впевнені в якості нашого продукту.
                   </p>
-                  <a
-                    href="/sign-in"
-                    target="_blank"
-                    class="link link-primary h-12 px-8 sm:h-14 sm:w-fit sm:px-9"
+                  <a href="/ua/sign-up" class="link link-primary h-12 px-8 sm:h-14 sm:w-fit sm:px-9"
                     >Зареєструватись</a
                   >
                 </div>
@@ -290,8 +318,10 @@
       <!-- ADVANTAGES -->
       <section id="advantages" class="bg-black-gradient py-8 sm:py-12 xl:py-16">
         <div class="container">
-          <h3 class="section-title mb-3 text-center sm:mb-4">У нас лучшая CRM</h3>
-          <p class="block-title mb-6 text-center text-secondary sm:mb-8">Зуб даю</p>
+          <h3 class="section-title mb-3 text-center sm:mb-4">Наші переваги</h3>
+          <p class="block-title mb-6 text-center text-secondary sm:mb-8">
+            Інструменти, що прискорюють ваш успіх
+          </p>
           <ul class="grid gap-7 md:grid-cols-2 xl:grid-cols-4">
             <li class="text-center">
               <div
@@ -313,9 +343,9 @@
                   />
                 </svg>
               </div>
-              <h4 class="block-title mb-1 font-avenir-semibold sm:mb-2">Власний колл-центр</h4>
+              <h4 class="block-title mb-1 font-avenir-semibold sm:mb-2">Масове створення ТТН</h4>
               <p class="w-full text-secondary sm:mx-auto sm:max-w-[358px]">
-                Понад 200 менеджерів завжди готові допомогти.
+                Генерація до 1000 ТТН одним кліком
               </p>
             </li>
             <li class="text-center">
@@ -338,9 +368,11 @@
                   />
                 </svg>
               </div>
-              <h4 class="block-title mb-1 font-avenir-semibold sm:mb-2">Великий каталог</h4>
+              <h4 class="block-title mb-1 font-avenir-semibold sm:mb-2">
+                Контроль лімітів контрагентів
+              </h4>
               <p class="w-full text-secondary sm:mx-auto sm:max-w-[358px]">
-                Широкий вибір товарів для будь-яких потреб.
+                Захист від перевищення фінансових лімітів
               </p>
             </li>
             <li class="text-center">
@@ -363,9 +395,9 @@
                   />
                 </svg>
               </div>
-              <h4 class="block-title mb-1 font-avenir-semibold sm:mb-2">Низькі ціни</h4>
+              <h4 class="block-title mb-1 font-avenir-semibold sm:mb-2">Автоматизація процесів</h4>
               <p class="w-full text-secondary sm:mx-auto sm:max-w-[358px]">
-                Найдоступніші ціни на ринку дропшипінгу.
+                Мінімум втручання людини у роботу
               </p>
             </li>
             <li class="text-center">
@@ -388,9 +420,9 @@
                   />
                 </svg>
               </div>
-              <h4 class="block-title mb-1 font-avenir-semibold sm:mb-2">Швидкість</h4>
+              <h4 class="block-title mb-1 font-avenir-semibold sm:mb-2">Складський облік</h4>
               <p class="w-full text-secondary sm:mx-auto sm:max-w-[358px]">
-                Швидка обробка та відправка замовлень в той же день.
+                Чіткий контроль залишків і переміщень
               </p>
             </li>
           </ul>
@@ -404,13 +436,46 @@
             class="flex flex-col items-center justify-between gap-10 py-8 sm:py-16 lg:flex-row xl:pb-10 xl:pt-20"
           >
             <div class="relative max-w-[608px] justify-between">
-              <h3 class="section-title mb-3 sm:mb-4">Про проект</h3>
-              <p class="lg:mb-12">
-                ASAP is a cutting-edge platform designed to simplify the process of purchasing CRM
-                systems. Tailored for businesses of all sizes, it offers a wide range of CRM
-                solutions that streamline customer relationship management, boost sales, and enhance
-                overall productivity. With ASAP, businesses can easily compare features, pricing.
-              </p>
+              <h3 class="section-title mb-3 sm:mb-4">Про проєкт</h3>
+              <div class="space-y-4 lg:mb-12">
+                <p>
+                  <span class="fotn-avenir-semibold">ProfiCRM</span> — це потужне та інтуїтивно
+                  зрозуміле рішення для автоматизації управління відносинами з клієнтами, розроблене
+                  спеціально для малого та середнього бізнесу. Наша система допомагає компаніям
+                  оптимізувати продажі, поліпшити обслуговування клієнтів і підвищити ефективність
+                  внутрішніх процесів.
+                </p>
+                <p class="font-avenir-semibold">З ProfiCRM ви зможете:</p>
+                <ul>
+                  <li
+                    class="relative pl-6 before:absolute before:left-2 before:top-2 before:size-1.5 before:rounded-full before:bg-white"
+                  >
+                    Систематизувати контакти та ліди для швидкого доступу до інформації.
+                  </li>
+                  <li
+                    class="relative pl-6 before:absolute before:left-2 before:top-2 before:size-1.5 before:rounded-full before:bg-white"
+                  >
+                    Автоматизувати робочі процеси, що дозволяє звільнити час для важливих завдань.
+                  </li>
+                  <li
+                    class="relative pl-6 before:absolute before:left-2 before:top-2 before:size-1.5 before:rounded-full before:bg-white"
+                  >
+                    Легко відстежувати прогрес угод і прогнозувати продажі завдяки гнучким
+                    аналітичним інструментам.
+                  </li>
+                  <li
+                    class="relative pl-6 before:absolute before:left-2 before:top-2 before:size-1.5 before:rounded-full before:bg-white"
+                  >
+                    Інтегрувати систему з популярними платформами та сервісами для безшовної роботи.
+                  </li>
+                  <li
+                    class="relative pl-6 before:absolute before:left-2 before:top-2 before:size-1.5 before:rounded-full before:bg-white"
+                  >
+                    Отримати повний контроль над клієнтським шляхом — від першого контакту до
+                    успішної угоди.
+                  </li>
+                </ul>
+              </div>
               <div
                 class="absolute -bottom-2 left-[48%] size-[69px] translate-y-full sm:size-[90px] lg:relative lg:bottom-0 lg:left-0 lg:h-[127px] lg:w-[136px] lg:translate-y-0"
               >
@@ -458,7 +523,7 @@
               <img
                 src="/images/about/about-graph-2.png"
                 alt="graph-img"
-                class="absolute bottom-9 left-[-106px]"
+                class="absolute -left-14 bottom-9"
               />
               <svg
                 width="814"
@@ -541,16 +606,17 @@
           >
             <div class="max-w-[608px] justify-between">
               <div class="space-y-5 sm:space-y-8">
-                <h3 class="section-title">
-                  Використовуйте Profi CRM систему для підвищення свого прибутку
-                </h3>
+                <h3 class="section-title">Оптимізуйте бізнес – збільшуйте прибуток з ProfiCRM</h3>
                 <p>
-                  ASAP is a cutting-edge platform designed to simplify the process of purchasing CRM
-                  systems. Tailored for businesses of all sizes, it offers a wide range of CRM
-                  solutions that streamline customer relationship management, boost sales, and
-                  enhance overall productivity. With ASAP, businesses can easily compare features,
-                  pricing.
+                  ProfiCRM – це універсальне рішення для будь-якого виду торгового бізнесу.
+                  Незалежно від того, чи керуєте ви великим інтернет-магазином, продаєте на
+                  маркетплейсах або ведете бізнес через Instagram, наша CRM допоможе вам
+                  автоматизувати процеси, оптимізувати роботу з клієнтами та збільшити ефективність
+                  вашої команди. Легко інтегрується з популярними платформами та дозволяє ефективно
+                  управляти замовленнями, складом і фінансами – як у фізичних торгових точках, так і
+                  в онлайн-продажах.
                 </p>
+                <h6 class="font-avenir-semibold">ProfiCRM – для тих, хто прагне більшого!</h6>
                 <ul class="grid grid-cols-2 gap-4 sm:grid-cols-3">
                   <li class="flex gap-3">
                     <svg
@@ -658,7 +724,7 @@
                         stroke-linejoin="round"
                       />
                     </svg>
-                    <span class="font-avenir-medium">Закази</span>
+                    <span class="font-avenir-medium">Замовлення</span>
                   </li>
                 </ul>
               </div>
@@ -705,20 +771,22 @@
         </div>
       </section>
 
-      <!-- QUESTION -->
+      <!-- BANER -->
       <section class="relative overflow-hidden bg-primary-bg py-12 sm:py-20 xl:py-[120px]">
         <div class="container">
           <div class="relative z-[1] flex flex-col items-center">
-            <span class="block-title mb-3 text-primary sm:mb-4">Лучшая CRM для вас</span>
-            <h3 class="section-title mb-5 font-avenir-semibold sm:mb-6">Не знайшли відповідь?</h3>
-            <button
-              type="button"
-              class="link link-primary h-12 w-fit px-14 sm:h-14"
-              data-twe-toggle="modal"
-              data-twe-target="#application-modal"
+            <span class="block-title mb-3 text-primary sm:mb-4">
+              Спробуйте ProfiCRM безкоштовно!
+            </span>
+            <h3
+              class="section-title mb-5 w-full max-w-[650px] text-center font-avenir-semibold sm:mb-6"
             >
-              Звʼязатися
-            </button>
+              Отримайте 15 днів повного доступу до всіх функцій системи та переконайтеся в її
+              ефективності.
+            </h3>
+            <a href="/ua/sign-up" class="link link-primary h-12 w-fit px-14 sm:h-14">
+              Хочу спробувати!
+            </a>
           </div>
         </div>
         <svg
@@ -743,11 +811,12 @@
       <!-- PROFIT -->
       <section id="profit" class="py-8 sm:py-14 xl:py-20">
         <div class="container">
-          <div class="mb-5 flex flex-col justify-between gap-3 sm:mb-8 md:flex-row md:gap-10">
-            <h3 class="section-title whitespace-nowrap">Ваша выгода</h3>
-            <p class="w-full max-w-[492px]">
-              Система помогает отслеживать взаимодействия с клиентами, увеличивая эффективность
-              работы команды.
+          <div class="mb-5 flex flex-col justify-between gap-3 sm:mb-8 lg:flex-row lg:gap-10">
+            <h3 class="section-title lg:whitespace-nowrap">Що ви отримаєте з Profi CRM?</h3>
+            <p class="w-full lg:max-w-[492px]">
+              ProfiCRM забезпечує комплексне рішення для автоматизації та оптимізації процесів
+              вашого торгового бізнесу. Всі інструменти під рукою, від управління клієнтами до
+              детальної аналітики.
             </p>
           </div>
           <div class="grid justify-center gap-5 sm:gap-4 md:grid-cols-2 xl:grid-cols-4">
@@ -767,8 +836,11 @@
                   fill="#444CE7"
                 />
               </svg>
-              <h5 class="mb-1 font-avenir-medium text-base">Власний кол-центр</h5>
-              <p class="text-sm">Понад 200 менеджерів завжди готові допомогти.</p>
+              <h5 class="mb-1 font-avenir-medium text-base">Доступ та безпека</h5>
+              <p class="text-sm">
+                Гнучка система прав доступу для кожного співробітника. Контроль дій у CRM та
+                надійний захист ваших даних.
+              </p>
             </div>
             <div class="rounded-2xl bg-primary-bg p-4 sm:max-w-[358px] md:max-w-full">
               <svg
@@ -792,8 +864,10 @@
                   fill="#444CE7"
                 />
               </svg>
-              <h5 class="mb-1 font-avenir-medium text-base">Великий каталог</h5>
-              <p class="text-sm">Широкий вибір товарів для будь-яких потреб.</p>
+              <h5 class="mb-1 font-avenir-medium text-base">Автоматичне розсилання SMS</h5>
+              <p class="text-sm">
+                Налаштуйте автоматичне надсилання повідомлень залежно від статусу клієнта в CRM.
+              </p>
             </div>
             <div class="rounded-2xl bg-primary-bg p-4 sm:max-w-[358px] md:max-w-full">
               <svg
@@ -817,8 +891,10 @@
                   fill="#444CE7"
                 />
               </svg>
-              <h5 class="mb-1 font-avenir-medium text-base">Низькі ціни</h5>
-              <p class="text-sm">Найдоступніші ціни на ринку дропшипінгу.</p>
+              <h5 class="mb-1 font-avenir-medium text-base">Ліміти контрагентів</h5>
+              <p class="text-sm">
+                Задавайте індивідуальні ліміти для кожного контрагента та контролюйте їх дотримання.
+              </p>
             </div>
             <div class="rounded-2xl bg-primary-bg p-4 sm:max-w-[358px] md:max-w-full">
               <svg
@@ -838,8 +914,105 @@
                   stroke-linejoin="round"
                 />
               </svg>
-              <h5 class="mb-1 font-avenir-medium text-base">Швидкість</h5>
-              <p class="text-sm">Швидка обробка та відправка замовлень в той же день.</p>
+              <h5 class="mb-1 font-avenir-medium text-base">Сканер штрих-кодів</h5>
+              <p class="text-sm">
+                Інтегрований сканер для замовлень, що дозволяє контролювати все до найдрібніших
+                деталей.
+              </p>
+            </div>
+            <div class="rounded-2xl bg-primary-bg p-4 sm:max-w-[358px] md:max-w-full">
+              <svg
+                width="32"
+                height="32"
+                viewBox="0 0 32 32"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="mb-4"
+              >
+                <path
+                  d="M11.4502 10.981L14.9135 4.00469C15.3581 3.10911 16.6426 3.10911 17.0871 4.00469L20.5505 10.981L28.2957 12.1066C29.2894 12.251 29.6854 13.4655 28.9661 14.1622L23.3626 19.5887L24.685 27.2549C24.8549 28.2394 23.8155 28.9901 22.9263 28.5251L16.0003 24.9037L9.07429 28.5251C8.18513 28.9901 7.14578 28.2394 7.31559 27.2549L8.63799 19.5887L3.03466 14.1622C2.31522 13.4655 2.71129 12.251 3.70502 12.1066L11.4502 10.981Z"
+                  fill="#444CE7"
+                  stroke="#444CE7"
+                  stroke-width="3.33333"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+              <h5 class="mb-1 font-avenir-medium text-base">Прослуховування дзвінків</h5>
+              <p class="text-sm">
+                Прослуховуйте записи дзвінків безпосередньо з картки замовлення для кращої
+                аналітики.
+              </p>
+            </div>
+            <div class="rounded-2xl bg-primary-bg p-4 sm:max-w-[358px] md:max-w-full">
+              <svg
+                width="32"
+                height="32"
+                viewBox="0 0 32 32"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="mb-4"
+              >
+                <path
+                  d="M11.4502 10.981L14.9135 4.00469C15.3581 3.10911 16.6426 3.10911 17.0871 4.00469L20.5505 10.981L28.2957 12.1066C29.2894 12.251 29.6854 13.4655 28.9661 14.1622L23.3626 19.5887L24.685 27.2549C24.8549 28.2394 23.8155 28.9901 22.9263 28.5251L16.0003 24.9037L9.07429 28.5251C8.18513 28.9901 7.14578 28.2394 7.31559 27.2549L8.63799 19.5887L3.03466 14.1622C2.31522 13.4655 2.71129 12.251 3.70502 12.1066L11.4502 10.981Z"
+                  fill="#444CE7"
+                  stroke="#444CE7"
+                  stroke-width="3.33333"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+              <h5 class="mb-1 font-avenir-medium text-base">Детальна аналітика</h5>
+              <p class="text-sm">
+                Отримуйте аналітику у 3 кліки: Cross-Sale, Up-Sale, середній чек, викуп замовлень.
+              </p>
+            </div>
+            <div class="rounded-2xl bg-primary-bg p-4 sm:max-w-[358px] md:max-w-full">
+              <svg
+                width="32"
+                height="32"
+                viewBox="0 0 32 32"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="mb-4"
+              >
+                <path
+                  d="M11.4502 10.981L14.9135 4.00469C15.3581 3.10911 16.6426 3.10911 17.0871 4.00469L20.5505 10.981L28.2957 12.1066C29.2894 12.251 29.6854 13.4655 28.9661 14.1622L23.3626 19.5887L24.685 27.2549C24.8549 28.2394 23.8155 28.9901 22.9263 28.5251L16.0003 24.9037L9.07429 28.5251C8.18513 28.9901 7.14578 28.2394 7.31559 27.2549L8.63799 19.5887L3.03466 14.1622C2.31522 13.4655 2.71129 12.251 3.70502 12.1066L11.4502 10.981Z"
+                  fill="#444CE7"
+                  stroke="#444CE7"
+                  stroke-width="3.33333"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+              <h5 class="mb-1 font-avenir-medium text-base">Комунікація з клієнтами</h5>
+              <p class="text-sm">
+                Всі повідомлення з Instagram, Viber, Telegram, Facebook, Email і телефонії — в
+                одному вікні CRM.
+              </p>
+            </div>
+            <div class="rounded-2xl bg-primary-bg p-4 sm:max-w-[358px] md:max-w-full">
+              <svg
+                width="32"
+                height="32"
+                viewBox="0 0 32 32"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="mb-4"
+              >
+                <path
+                  d="M11.4502 10.981L14.9135 4.00469C15.3581 3.10911 16.6426 3.10911 17.0871 4.00469L20.5505 10.981L28.2957 12.1066C29.2894 12.251 29.6854 13.4655 28.9661 14.1622L23.3626 19.5887L24.685 27.2549C24.8549 28.2394 23.8155 28.9901 22.9263 28.5251L16.0003 24.9037L9.07429 28.5251C8.18513 28.9901 7.14578 28.2394 7.31559 27.2549L8.63799 19.5887L3.03466 14.1622C2.31522 13.4655 2.71129 12.251 3.70502 12.1066L11.4502 10.981Z"
+                  fill="#444CE7"
+                  stroke="#444CE7"
+                  stroke-width="3.33333"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+              <h5 class="mb-1 font-avenir-medium text-base">Звітність для бухгалтерії</h5>
+              <p class="text-sm">
+                Легке та швидке формування звітів для бухгалтерії на основі актуальних даних.
+              </p>
             </div>
           </div>
         </div>
@@ -849,9 +1022,7 @@
       <section id="partners">
         <div class="container px-0 sm:px-4">
           <div class="rounded-3xl bg-primary-bg px-4 py-12 sm:rounded-[32px] sm:px-9 xl:px-16">
-            <h3 class="mb-8 text-center text-sm sm:text-xl">
-              Наші партнери, котрі вже заробляють з нами!
-            </h3>
+            <h3 class="mb-8 text-center text-sm sm:text-xl">Наші партнери</h3>
             <ul
               class="flex flex-wrap items-center justify-center gap-8 min-[1080px]:justify-between"
             >
@@ -1133,19 +1304,21 @@
         </div>
       </section>
 
-      <!-- QUESTION -->
+      <!-- BANER -->
       <section
         class="relative overflow-hidden border-b border-solid border-stroke py-12 sm:py-[72px] xl:py-[120px]"
       >
         <div class="container">
           <div class="relative z-[1] flex flex-col items-center">
-            <span class="block-title mb-3 text-primary sm:mb-4">Лучшая CRM для вас</span>
+            <span class="block-title mb-3 text-primary sm:mb-4">Випробуйте ProfiCRM на повну!</span>
             <h3
-              class="section-title mb-5 w-full max-w-[435px] text-center font-avenir-semibold sm:mb-6"
+              class="section-title mb-5 w-full max-w-[650px] text-center font-avenir-semibold sm:mb-6"
             >
-              Свяжитесь с нами, чтобы получить демо версию
+              Зареєструйтесь та користуйтесь усіма можливостями безкоштовно протягом 15 днів.
             </h3>
-            <a href="#" class="link link-primary h-12 w-fit px-10 sm:h-14">Получить демо</a>
+            <a href="/ua/sign-up" class="link link-primary h-12 w-fit px-10 sm:h-14"
+              >Зареєструватися зараз</a
+            >
           </div>
         </div>
         <svg
@@ -1170,7 +1343,7 @@
       <!-- TARIFS -->
       <section id="tarifs" class="py-8 sm:py-12 xl:py-16">
         <div class="container max-w-[1344px]">
-          <div class="grid gap-4 md:grid-cols-2 xl:grid-cols-4">
+          <div class="grid gap-4 md:grid-cols-2 xl:grid-cols-3">
             <div class="flex flex-row justify-between md:flex-col">
               <div class="space-y-3 sm:space-y-4">
                 <h3 class="section-title">Тарифи</h3>
@@ -1218,57 +1391,120 @@
               />
             </div>
             <div
-              class="flex w-full max-w-[500px] flex-col gap-6 justify-self-center overflow-hidden rounded-3xl bg-primary-bg px-4 py-12 text-center sm:py-16 md:max-w-full"
+              class="flex w-full max-w-[500px] flex-col justify-between gap-4 justify-self-center overflow-hidden rounded-3xl bg-primary-bg px-4 py-12 sm:gap-6 sm:py-16 md:max-w-full"
             >
-              <h4 class="font-avenir-semibold text-xl tracking-[0.02em]">Помісячна оплата</h4>
-              <div class="flex flex-col gap-2">
-                <span class="text-base">від</span>
-                <span class="text-5xl">$40</span>
-                <span class="text-base">на місяць</span>
-              </div>
+              <h4 class="text-center font-avenir-semibold text-xl tracking-[0.02em]">
+                Старт (безкоштовний тестовий тариф)
+              </h4>
+              <p class="text-center">Ідеально для першого знайомства з системою</p>
+              <ul>
+                <li
+                  class="relative pl-6 before:absolute before:left-2 before:top-2 before:size-1.5 before:rounded-full before:bg-white"
+                >
+                  Необмежена кількість користувачів
+                </li>
+                <li
+                  class="relative pl-6 before:absolute before:left-2 before:top-2 before:size-1.5 before:rounded-full before:bg-white"
+                >
+                  200 замовлень
+                </li>
+              </ul>
+              <h6 class="text-center font-avenir-semibold text-5xl">0$</h6>
               <a href="#" class="link link-primary h-14 w-full">
                 <div class="text-base">Подключить</div>
               </a>
             </div>
             <div
-              class="relative flex w-full max-w-[500px] flex-col gap-6 justify-self-center overflow-hidden rounded-3xl bg-primary px-4 py-12 text-center sm:py-16 md:max-w-full"
+              class="flex w-full max-w-[500px] flex-col justify-between gap-4 justify-self-center overflow-hidden rounded-3xl bg-primary px-4 py-12 sm:gap-6 sm:py-16 md:max-w-full"
             >
-              <h4 class="font-avenir-semibold text-xl tracking-[0.02em]">Оплата за півроку</h4>
-              <div class="flex flex-col gap-2">
-                <span class="text-base">від</span>
-                <div class="flex items-center justify-center gap-3">
-                  <span class="text-5xl">$216</span>
-                  <span class="text-base line-through opacity-40">$240</span>
-                </div>
-                <span class="text-base">на 6 місяців</span>
-              </div>
+              <h4 class="text-center font-avenir-semibold text-xl tracking-[0.02em]">Базовий</h4>
+              <p class="text-center">Оптимальний для малого бізнесу</p>
+              <ul>
+                <li
+                  class="relative pl-6 before:absolute before:left-2 before:top-2 before:size-1.5 before:rounded-full before:bg-white"
+                >
+                  2 користувачі
+                </li>
+                <li
+                  class="relative pl-6 before:absolute before:left-2 before:top-2 before:size-1.5 before:rounded-full before:bg-white"
+                >
+                  200 замовлень/місяць
+                </li>
+              </ul>
+              <h6 class="text-center font-avenir-semibold text-5xl">9$</h6>
               <a href="#" class="link link-tertiary h-14 w-full">
                 <div class="text-base">Подключить</div>
               </a>
-              <div
-                class="absolute right-[-30px] top-[10px] flex h-8 w-40 rotate-[30deg] items-center justify-center bg-white font-avenir-semibold text-xl tracking-[0.02em] text-primary"
-              >
-                -10%
-              </div>
             </div>
             <div
-              class="relative flex w-full max-w-[500px] flex-col gap-6 justify-self-center overflow-hidden rounded-3xl bg-primary-bg px-4 py-12 text-center sm:py-16 md:max-w-full"
+              class="flex w-full max-w-[500px] flex-col justify-between gap-4 justify-self-center overflow-hidden rounded-3xl bg-primary-bg px-4 py-12 sm:gap-6 sm:py-16 md:max-w-full"
             >
-              <h4 class="font-avenir-semibold text-xl tracking-[0.02em]">Оплата за рік</h4>
-              <div class="flex flex-col gap-2">
-                <span class="text-base">від</span>
-                <div class="flex items-center justify-center gap-3">
-                  <span class="text-5xl">$408</span>
-                  <span class="text-base line-through opacity-40">$480</span>
-                </div>
-                <span class="text-base">на 12 місяців</span>
-              </div>
-              <a href="#" class="link link-primary h-14 w-full">Подключить</a>
-              <div
-                class="absolute right-[-30px] top-[10px] flex h-8 w-40 rotate-[30deg] items-center justify-center bg-white font-avenir-semibold text-xl tracking-[0.02em] text-primary-bg"
-              >
-                -15%
-              </div>
+              <h4 class="text-center font-avenir-semibold text-xl tracking-[0.02em]">
+                Професійний
+              </h4>
+              <p class="text-center">Розширені можливості для бізнесу</p>
+              <ul>
+                <li
+                  class="relative pl-6 before:absolute before:left-2 before:top-2 before:size-1.5 before:rounded-full before:bg-white"
+                >
+                  3 користувачі
+                </li>
+                <li
+                  class="relative pl-6 before:absolute before:left-2 before:top-2 before:size-1.5 before:rounded-full before:bg-white"
+                >
+                  500 замовлень/місяць
+                </li>
+              </ul>
+              <h6 class="text-center font-avenir-semibold text-5xl">25$</h6>
+              <a href="#" class="link link-primary h-14 w-full">
+                <div class="text-base">Подключить</div>
+              </a>
+            </div>
+            <div
+              class="flex w-full max-w-[500px] flex-col justify-between gap-4 justify-self-center overflow-hidden rounded-3xl bg-primary px-4 py-12 sm:gap-6 sm:py-16 md:max-w-full"
+            >
+              <h4 class="text-center font-avenir-semibold text-xl tracking-[0.02em]">Бізнес</h4>
+              <p class="text-center">Ідеальний для середнього бізнесу</p>
+              <ul>
+                <li
+                  class="relative pl-6 before:absolute before:left-2 before:top-2 before:size-1.5 before:rounded-full before:bg-white"
+                >
+                  6 користувачів
+                </li>
+                <li
+                  class="relative pl-6 before:absolute before:left-2 before:top-2 before:size-1.5 before:rounded-full before:bg-white"
+                >
+                  1200 замовлень/місяць
+                </li>
+              </ul>
+              <h6 class="text-center font-avenir-semibold text-5xl">45$</h6>
+              <a href="#" class="link link-tertiary h-14 w-full">
+                <div class="text-base">Подключить</div>
+              </a>
+            </div>
+            <div
+              class="flex w-full max-w-[500px] flex-col justify-between gap-4 justify-self-center overflow-hidden rounded-3xl bg-primary-bg px-4 py-12 sm:gap-6 sm:py-16 md:max-w-full"
+            >
+              <h4 class="text-center font-avenir-semibold text-xl tracking-[0.02em]">
+                Корпоративний
+              </h4>
+              <p class="text-center">Максимальні можливості для великого бізнесу</p>
+              <ul>
+                <li
+                  class="relative pl-6 before:absolute before:left-2 before:top-2 before:size-1.5 before:rounded-full before:bg-white"
+                >
+                  50 користувачів
+                </li>
+                <li
+                  class="relative pl-6 before:absolute before:left-2 before:top-2 before:size-1.5 before:rounded-full before:bg-white"
+                >
+                  10000 замовлень/місяць
+                </li>
+              </ul>
+              <h6 class="text-center font-avenir-semibold text-5xl">95$</h6>
+              <a href="#" class="link link-primary h-14 w-full">
+                <div class="text-base">Подключить</div>
+              </a>
             </div>
           </div>
         </div>
@@ -1280,52 +1516,44 @@
           <div
             class="relative pb-16 pt-8 before:absolute before:left-0 before:top-0 before:z-[-1] before:h-full before:max-h-[352px] before:w-full before:rounded-[32px] before:bg-primary-bg sm:pt-12"
           >
-            <div class="px-4 md:px-8 xl:px-12">
-              <h3 class="section-title mb-3 sm:mb-4">Отзывы</h3>
-              <div
-                class="mb-5 flex flex-col justify-between gap-3 md:mb-8 md:flex-row md:items-end md:gap-10"
-              >
-                <p class="w-full max-w-[596px]">
-                  Доброго дня. Хочу висловити слова подяки за швидкий та корисний сервіс команди
-                  Sitniks. CRM система постійно доробляється та покращується. Дуже великою перевагою
-                  є те, що компанія рухається в ногу з часом та прислухається до побажань клієнтів і
-                  швидко втілює це в життя.
-                </p>
-                <div class="flex h-10 items-center gap-6 md:justify-center">
-                  <svg
-                    width="14"
-                    height="14"
-                    viewBox="0 0 14 14"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="reviews-swiper-button-prev swiper-button-prev static h-[14px] w-[14px] translate-y-[11px] rotate-180"
-                  >
-                    <path
-                      d="M1.16699 7.12984H12.8337M12.8337 7.12984L7.00033 1.29651M12.8337 7.12984L7.00033 12.9632"
-                      stroke="currentColor"
-                      stroke-width="1.67"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </svg>
-                  <div class="reviews-swiper-pagination swiper-pagination static w-fit"></div>
-                  <svg
-                    width="14"
-                    height="14"
-                    viewBox="0 0 14 14"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="reviews-swiper-button-next swiper-button-next static h-[14px] w-[14px] translate-y-[11px]"
-                  >
-                    <path
-                      d="M1.16699 7.12984H12.8337M12.8337 7.12984L7.00033 1.29651M12.8337 7.12984L7.00033 12.9632"
-                      stroke="currentColor"
-                      stroke-width="1.67"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </svg>
-                </div>
+            <div
+              class="mb-5 flex flex-col justify-between gap-3 px-4 sm:flex-row sm:items-center sm:gap-10 md:mb-8 md:px-8 xl:px-12"
+            >
+              <h3 class="section-title mb-3 sm:mb-4">Відгуки клієнтів</h3>
+              <div class="flex h-10 items-center gap-6 md:justify-center">
+                <svg
+                  width="14"
+                  height="14"
+                  viewBox="0 0 14 14"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="reviews-swiper-button-prev swiper-button-prev static h-[14px] w-[14px] translate-y-[11px] rotate-180"
+                >
+                  <path
+                    d="M1.16699 7.12984H12.8337M12.8337 7.12984L7.00033 1.29651M12.8337 7.12984L7.00033 12.9632"
+                    stroke="currentColor"
+                    stroke-width="1.67"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+                <div class="reviews-swiper-pagination swiper-pagination static w-fit"></div>
+                <svg
+                  width="14"
+                  height="14"
+                  viewBox="0 0 14 14"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="reviews-swiper-button-next swiper-button-next static h-[14px] w-[14px] translate-y-[11px]"
+                >
+                  <path
+                    d="M1.16699 7.12984H12.8337M12.8337 7.12984L7.00033 1.29651M12.8337 7.12984L7.00033 12.9632"
+                    stroke="currentColor"
+                    stroke-width="1.67"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
               </div>
             </div>
             <div class="md:px-8 xl:px-12">
@@ -1364,9 +1592,13 @@
                         </defs>
                       </svg>
                       <p class="mb-1 line-clamp-6" data-review-text>
-                        Доброго дня. Хочу висловити слова подяки за швидкий та корисний сервіс!
+                        ProfiCRM значно змінила підхід до управління нашим інтернет-магазином. Одна
+                        з найбільших переваг – це можливість генерувати сотні ТТН в один клік, що
+                        суттєво прискорило обробку замовлень. Важливо, що завдяки системі аналітики
+                        нам вдалося збільшити середній чек. Дуже радий, що обрав ProfiCRM для свого
+                        бізнесу!
                       </p>
-                      <button class="mb-4 text-primary" data-more-btn>Показать полностью</button>
+                      <button class="mb-4 text-primary" data-more-btn>Показати повністю</button>
                       <div class="flex items-center gap-3">
                         <img
                           src="/images/review.png"
@@ -1374,8 +1606,10 @@
                           class="size-12 overflow-hidden rounded-full"
                         />
                         <div class="flex flex-col">
-                          <h5 class="font-avenir-medium text-base">Антонина Белугова</h5>
-                          <p class="font-avenir-medium text-sm text-gray">Менеджер</p>
+                          <h5 class="font-avenir-medium text-base">Олексій Коваленко</h5>
+                          <p class="font-avenir-medium text-sm text-gray">
+                            Власник інтернет-магазину одягу
+                          </p>
                         </div>
                       </div>
                     </div>
@@ -1413,12 +1647,13 @@
                         </defs>
                       </svg>
                       <p class="mb-1 line-clamp-6" data-review-text>
-                        Доброго дня. Хочу висловити слова подяки за швидкий та корисний сервіс
-                        команди Sitniks. CRM система постійно доробляється та покращується. Дуже
-                        великою перевагою є те, що компанія рухається в ногу з часом та
-                        прислухається до побажань клієнтів.
+                        ProfiCRM стала справжнім відкриттям для нашої команди. Особливо сподобалась
+                        можливість працювати з усіма соціальними мережами та месенджерами в одному
+                        вікні, не перемикаючись між додатками. Це суттєво спростило роботу з
+                        клієнтами та прискорило обробку замовлень. Також варто відзначити службу
+                        підтримки, яка завжди швидко вирішує питання. Однозначно рекомендую!
                       </p>
-                      <button class="mb-4 text-primary" data-more-btn>Показать полностью</button>
+                      <button class="mb-4 text-primary" data-more-btn>Показати повністю</button>
                       <div class="flex items-center gap-3">
                         <img
                           src="/images/review.png"
@@ -1426,8 +1661,8 @@
                           class="size-12 overflow-hidden rounded-full"
                         />
                         <div class="flex flex-col">
-                          <h5 class="font-avenir-medium text-base">Антонина Белугова</h5>
-                          <p class="font-avenir-medium text-sm text-gray">Менеджер</p>
+                          <h5 class="font-avenir-medium text-base">Анна Марченко</h5>
+                          <p class="font-avenir-medium text-sm text-gray">Менеджер з продажу</p>
                         </div>
                       </div>
                     </div>
@@ -1465,13 +1700,13 @@
                         </defs>
                       </svg>
                       <p class="mb-1 line-clamp-6" data-review-text>
-                        Доброго дня. Хочу висловити слова подяки за швидкий та корисний сервіс
-                        команди Sitniks. CRM система постійно доробляється та покращується. Дуже
-                        великою перевагою є те, що компанія рухається в ногу з часом та
-                        прислухається до побажань клієнтів і швидко втілює це в життя. Пишу, бо є з
-                        чим порівняти і раджу всім срм систему ситникс.
+                        Ця crm система суттєво полегшила нам управління складом і замовленнями.
+                        Функція сканування штрих-кодів дозволяє швидко обробляти замовлення та
+                        контролювати залишки товарів. Виявилась дуже корисною можливість бачити всі
+                        дії співробітників у системі, що допомагає уникнути помилок. Це інструмент
+                        до якого швидко звикаєш і не бачиш подальшої роботи без нього.
                       </p>
-                      <button class="mb-4 text-primary" data-more-btn>Показать полностью</button>
+                      <button class="mb-4 text-primary" data-more-btn>Показати повністю</button>
                       <div class="flex items-center gap-3">
                         <img
                           src="/images/review.png"
@@ -1479,8 +1714,10 @@
                           class="size-12 overflow-hidden rounded-full"
                         />
                         <div class="flex flex-col">
-                          <h5 class="font-avenir-medium text-base">Антонина Белугова</h5>
-                          <p class="font-avenir-medium text-sm text-gray">Менеджер</p>
+                          <h5 class="font-avenir-medium text-base">Сергій Мельничук</h5>
+                          <p class="font-avenir-medium text-sm text-gray">
+                            Керівник торгової точки
+                          </p>
                         </div>
                       </div>
                     </div>
@@ -1518,15 +1755,14 @@
                         </defs>
                       </svg>
                       <p class="mb-1 line-clamp-6" data-review-text>
-                        Доброго дня. Хочу висловити слова подяки за швидкий та корисний сервіс
-                        команди Sitniks. CRM система постійно доробляється та покращується. Дуже
-                        великою перевагою є те, що компанія рухається в ногу з часом та
-                        прислухається до побажань клієнтів і швидко втілює це в життя. Пишу, бо є з
-                        чим порівняти і раджу всім срм систему ситникс, якщо Ви обрали шлях
-                        систематизації свого бізнесу. З цією компанією я відчув на собі, що це буде
-                        швидко і результативно 100%.
+                        Як бухгалтер, я дуже ціную простоту та швидкість, з якими можна формувати
+                        звіти. У ProfiCRM усі фінансові дані завжди під рукою, і більше немає
+                        необхідності вручну збирати інформацію. Тепер наші звіти формуються
+                        буквально за кілька хвилин, що дозволяє ефективніше використовувати робочий
+                        час. Це ідеальне рішення для організації обліку. Приємний бонус -
+                        безкоштовний пробний період, щоб ознайомитись з наповненням системи.
                       </p>
-                      <button class="mb-4 text-primary" data-more-btn>Показать полностью</button>
+                      <button class="mb-4 text-primary" data-more-btn>Показати повністю</button>
                       <div class="flex items-center gap-3">
                         <img
                           src="/images/review.png"
@@ -1534,8 +1770,8 @@
                           class="size-12 overflow-hidden rounded-full"
                         />
                         <div class="flex flex-col">
-                          <h5 class="font-avenir-medium text-base">Антонина Белугова</h5>
-                          <p class="font-avenir-medium text-sm text-gray">Менеджер</p>
+                          <h5 class="font-avenir-medium text-base">Дмитро Головко</h5>
+                          <p class="font-avenir-medium text-sm text-gray">Бухгалтер</p>
                         </div>
                       </div>
                     </div>
@@ -1573,15 +1809,12 @@
                         </defs>
                       </svg>
                       <p class="mb-1 line-clamp-6" data-review-text>
-                        Доброго дня. Хочу висловити слова подяки за швидкий та корисний сервіс
-                        команди Sitniks. CRM система постійно доробляється та покращується. Дуже
-                        великою перевагою є те, що компанія рухається в ногу з часом та
-                        прислухається до побажань клієнтів і швидко втілює це в життя. Пишу, бо є з
-                        чим порівняти і раджу всім срм систему ситникс, якщо Ви обрали шлях
-                        систематизації свого бізнесу. З цією компанією я відчув на собі, що це буде
-                        швидко і результативно 100%.
+                        ProfiCRM стала незамінною частиною нашого бізнесу. Система дозволяє
+                        автоматизувати безліч процесів, що раніше вимагали значного людського
+                        ресурсу. Особливо хочу відзначити функцію автоматичного створення ТТН та
+                        розсилок – це не лише зекономило час, а й покращило наш сервіс.
                       </p>
-                      <button class="mb-4 text-primary" data-more-btn>Показать полностью</button>
+                      <button class="mb-4 text-primary" data-more-btn>Показати повністю</button>
                       <div class="flex items-center gap-3">
                         <img
                           src="/images/review.png"
@@ -1589,8 +1822,119 @@
                           class="size-12 overflow-hidden rounded-full"
                         />
                         <div class="flex flex-col">
-                          <h5 class="font-avenir-medium text-base">Антонина Белугова</h5>
-                          <p class="font-avenir-medium text-sm text-gray">Менеджер</p>
+                          <h5 class="font-avenir-medium text-base">Ольга Жолобенко</h5>
+                          <p class="font-avenir-medium text-sm text-gray">Директор</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div
+                      class="w-full rounded-[32px] border-[2px] border-solid border-primary-bg bg-black p-4 pt-6 sm:p-6 sm:pt-8"
+                    >
+                      <svg
+                        width="64"
+                        height="64"
+                        viewBox="0 0 64 64"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="mb-4 size-12 sm:mb-6 sm:size-16"
+                      >
+                        <g clip-path="url(#clip0_6024_2165)">
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M21.8062 34.7429C21.5022 37.5743 20.6829 39.8341 19.254 41.8346C17.3417 44.5117 14.1376 47.0077 8.83062 49.6614C7.47571 50.3387 6.9265 51.9862 7.60396 53.3412C8.28142 54.6962 9.92903 55.2455 11.2839 54.5679C16.9485 51.7357 21.0588 48.746 23.718 45.0229C26.4272 41.2301 27.429 36.9632 27.429 32V15.5427C27.429 12.008 24.5635 9.14258 21.0289 9.14258H6.40009C2.86545 9.14258 0 12.008 0 15.5427V28.3428C0 31.8775 2.86548 34.7429 6.40009 34.7429H21.8062Z"
+                            fill="#444CE7"
+                          />
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M58.3773 34.7429C58.0734 37.5743 57.2542 39.8341 55.8253 41.8346C53.913 44.5117 50.7089 47.0077 45.4019 49.6614C44.047 50.3387 43.4976 51.9862 44.1753 53.3412C44.8526 54.6962 46.5002 55.2455 47.8552 54.5679C53.5198 51.7357 57.6301 48.746 60.2893 45.0229C62.9985 41.2301 64.0002 36.9632 64.0002 32V15.5427C64.0002 12.0081 61.1348 9.14258 57.6002 9.14258H42.9714C39.4367 9.14258 36.5713 12.0081 36.5713 15.5427V28.3428C36.5713 31.8775 39.4367 34.7429 42.9714 34.7429H58.3773Z"
+                            fill="#444CE7"
+                          />
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_6024_2165">
+                            <rect width="64" height="64" fill="white" />
+                          </clipPath>
+                        </defs>
+                      </svg>
+                      <p class="mb-1 line-clamp-6" data-review-text>
+                        ProfiCRM допомогла нам впорядкувати всі процеси. Детальна аналітика дає
+                        можливість відслідковувати найважливіші показники, такі як середній чек,
+                        викуп замовлень та ефективність продажів. Завдяки цьому ми змогли значно
+                        покращити свою стратегію і швидко адаптуватися до змін на ринку. Рекомендую
+                        цю систему для тих, хто шукає гнучке та просте рішення для свого бізнесу.
+                      </p>
+                      <button class="mb-4 text-primary" data-more-btn>Показати повністю</button>
+                      <div class="flex items-center gap-3">
+                        <img
+                          src="/images/review.png"
+                          alt="review-img"
+                          class="size-12 overflow-hidden rounded-full"
+                        />
+                        <div class="flex flex-col">
+                          <h5 class="font-avenir-medium text-base">Володимир Стасюк</h5>
+                          <p class="font-avenir-medium text-sm text-gray">
+                            Маркетолог в онлайн-магазині
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div
+                      class="w-full rounded-[32px] border-[2px] border-solid border-primary-bg bg-black p-4 pt-6 sm:p-6 sm:pt-8"
+                    >
+                      <svg
+                        width="64"
+                        height="64"
+                        viewBox="0 0 64 64"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="mb-4 size-12 sm:mb-6 sm:size-16"
+                      >
+                        <g clip-path="url(#clip0_6024_2165)">
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M21.8062 34.7429C21.5022 37.5743 20.6829 39.8341 19.254 41.8346C17.3417 44.5117 14.1376 47.0077 8.83062 49.6614C7.47571 50.3387 6.9265 51.9862 7.60396 53.3412C8.28142 54.6962 9.92903 55.2455 11.2839 54.5679C16.9485 51.7357 21.0588 48.746 23.718 45.0229C26.4272 41.2301 27.429 36.9632 27.429 32V15.5427C27.429 12.008 24.5635 9.14258 21.0289 9.14258H6.40009C2.86545 9.14258 0 12.008 0 15.5427V28.3428C0 31.8775 2.86548 34.7429 6.40009 34.7429H21.8062Z"
+                            fill="#444CE7"
+                          />
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M58.3773 34.7429C58.0734 37.5743 57.2542 39.8341 55.8253 41.8346C53.913 44.5117 50.7089 47.0077 45.4019 49.6614C44.047 50.3387 43.4976 51.9862 44.1753 53.3412C44.8526 54.6962 46.5002 55.2455 47.8552 54.5679C53.5198 51.7357 57.6301 48.746 60.2893 45.0229C62.9985 41.2301 64.0002 36.9632 64.0002 32V15.5427C64.0002 12.0081 61.1348 9.14258 57.6002 9.14258H42.9714C39.4367 9.14258 36.5713 12.0081 36.5713 15.5427V28.3428C36.5713 31.8775 39.4367 34.7429 42.9714 34.7429H58.3773Z"
+                            fill="#444CE7"
+                          />
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_6024_2165">
+                            <rect width="64" height="64" fill="white" />
+                          </clipPath>
+                        </defs>
+                      </svg>
+                      <p class="mb-1 line-clamp-6" data-review-text>
+                        ProfiCRM вразила мене своєю простотою. Мені знадобилося всього близько
+                        години, щоб розібратися у всіх функціях і почати активно працювати в
+                        системі. Інтерфейс інтуїтивний, а налаштування максимально гнучкі під
+                        потреби нашого відділу. Тепер вся команда використовує CRM, і це значно
+                        покращило нашу продуктивність. Рекомендую цю crm для тих, хто цінує свій
+                        час!
+                      </p>
+                      <button class="mb-4 text-primary" data-more-btn>Показати повністю</button>
+                      <div class="flex items-center gap-3">
+                        <img
+                          src="/images/review.png"
+                          alt="review-img"
+                          class="size-12 overflow-hidden rounded-full"
+                        />
+                        <div class="flex flex-col">
+                          <h5 class="font-avenir-medium text-base">Марія Савчук</h5>
+                          <p class="font-avenir-medium text-sm text-gray">
+                            Керівник відділу продажу
+                          </p>
                         </div>
                       </div>
                     </div>
@@ -3234,22 +3578,21 @@
         </div>
       </section>
 
-      <!-- QUESTION -->
+      <!-- BANER -->
       <section
         class="relative overflow-hidden border-t border-solid border-stroke py-12 sm:py-20 xl:py-[120px]"
       >
         <div class="container">
           <div class="relative z-[1] flex flex-col items-center">
-            <span class="block-title mb-3 text-primary sm:mb-4">Лучшая CRM для вас</span>
-            <h3 class="section-title mb-5 font-avenir-semibold sm:mb-6">Не знайшли відповідь?</h3>
-            <button
-              type="button"
-              class="link link-primary h-12 w-fit px-14 sm:h-14"
-              data-twe-toggle="modal"
-              data-twe-target="#application-modal"
+            <span class="block-title mb-3 text-primary sm:mb-4">Почніть зараз!</span>
+            <h3
+              class="section-title mb-5 w-full max-w-[650px] text-center font-avenir-semibold sm:mb-6"
             >
-              Звʼязатися
-            </button>
+              Спробуйте ProfiCRM безкоштовно протягом 15 днів
+            </h3>
+            <a href="/ua/sign-up" class="link link-primary h-12 w-fit px-14 sm:h-14">
+              Зареєструватися
+            </a>
           </div>
         </div>
         <svg
@@ -3352,8 +3695,8 @@
                   >
                 </li>
                 <li>
-                  <a href="/ua/privacy" class="cursor-pointer font-inter-semibold text-white">
-                    Условия использования
+                  <a href="/ua/terms" class="cursor-pointer font-inter-semibold text-white">
+                    Умови використання
                   </a>
                 </li>
               </ul>
@@ -3361,11 +3704,8 @@
           </div>
           <div class="space-y-6">
             <div class="flex lg:justify-end">
-              <a
-                href="/sign-up"
-                target="_blank"
-                class="link link-secondary h-10 w-full px-5 xs:w-fit"
-                >Зареєструватись</a
+              <a href="/ua/sign-up" class="link link-primary h-10 w-full px-5 xs:w-fit"
+                >15 днів безкоштовного доступу</a
               >
             </div>
             <div class="flex flex-col gap-4 sm:flex-row sm:gap-6">
@@ -3486,201 +3826,6 @@
         </div>
       </div>
     </footer>
-
-    <!-- APPLICATION MODAL -->
-    <div
-      id="application-modal"
-      data-twe-modal-init
-      class="fixed left-0 top-0 z-[1055] hidden h-full w-full overflow-y-auto overflow-x-hidden outline-none"
-      tabindex="-1"
-      aria-labelledby="application-modal-label"
-      aria-hidden="true"
-    >
-      <div
-        data-twe-modal-dialog-ref
-        class="pointer-events-none relative flex min-h-[calc(100%-1rem)] w-auto translate-y-[-50px] items-center p-4 opacity-0 transition-all duration-300 ease-in-out sm:mx-auto sm:max-w-[550px]"
-      >
-        <div
-          class="pointer-events-auto relative flex w-full items-center justify-between rounded-[32px] border border-solid border-stroke bg-black bg-clip-padding px-4 py-6 outline-none sm:px-8 sm:py-12"
-        >
-          <form action="#" id="contacts-form" class="w-full space-y-5">
-            <h2
-              id="application-modal-label"
-              class="text-center font-avenir-semibold text-xl sm:text-2xl"
-            >
-              Не знайшли відповідь?
-            </h2>
-            <div class="space-y-1.5">
-              <label for="name" class="block select-none text-sm">Ім'я</label>
-              <input
-                id="name"
-                type="text"
-                placeholder="Ваше ім'я"
-                required
-                class="flex h-12 w-full rounded-xl border border-solid border-transparent bg-primary-bg px-3.5 py-3 text-base shadow-shadow-primary outline-none placeholder:text-gray"
-              />
-            </div>
-            <div class="space-y-1.5">
-              <label for="phone" class="block select-none text-sm">Телефон</label>
-              <input
-                id="phone"
-                type="tel"
-                placeholder="+38 (ХХХ) ХХХ ХХ ХХ"
-                required
-                class="flex h-12 w-full rounded-xl border border-solid border-transparent bg-primary-bg px-3.5 py-3 text-base shadow-shadow-primary outline-none placeholder:text-gray"
-              />
-            </div>
-            <div class="space-y-1.5">
-              <label for="telegram" class="block select-none text-sm">Телеграм</label>
-              <input
-                id="telegram"
-                type="text"
-                placeholder="@nickname"
-                class="flex h-12 w-full rounded-xl border border-solid border-transparent bg-primary-bg px-3.5 py-3 text-base shadow-shadow-primary outline-none placeholder:text-gray"
-              />
-            </div>
-            <button type="submit" class="link link-primary h-12 w-full sm:h-14">Звʼязатися</button>
-          </form>
-          <button
-            type="button"
-            class="absolute right-4 top-4 box-content rounded-none border-none text-gray transition-colors hover:text-primary hover:no-underline focus:text-primary focus:outline-none sm:right-8 sm:top-8"
-            data-twe-modal-dismiss
-            aria-label="Close"
-          >
-            <svg
-              width="32"
-              height="32"
-              viewBox="0 0 32 32"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M20.0003 11.9993L12.0003 19.9993M12.0003 11.9993L20.0003 19.9993M29.3337 15.9993C29.3337 23.3631 23.3641 29.3327 16.0003 29.3327C8.63653 29.3327 2.66699 23.3631 2.66699 15.9993C2.66699 8.63555 8.63653 2.66602 16.0003 2.66602C23.3641 2.66602 29.3337 8.63555 29.3337 15.9993Z"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-            </svg>
-          </button>
-        </div>
-      </div>
-    </div>
-
-    <!-- SUCCESS ALERT -->
-    <div
-      id="success-alert"
-      data-twe-modal-init
-      class="fixed left-0 top-0 z-[1055] hidden h-full w-full overflow-y-auto overflow-x-hidden outline-none"
-      tabindex="-1"
-      aria-labelledby="success-alert-label"
-      aria-hidden="true"
-    >
-      <div
-        data-twe-modal-dialog-ref
-        class="pointer-events-none relative flex min-h-[calc(100%-1rem)] w-auto translate-y-[-50px] items-center p-4 opacity-0 transition-all duration-300 ease-in-out sm:mx-auto sm:max-w-[550px]"
-      >
-        <div
-          class="pointer-events-auto relative flex w-full items-center justify-between rounded-[32px] border border-solid border-stroke bg-black bg-clip-padding px-4 py-6 outline-none sm:px-8 sm:py-12"
-        >
-          <div class="w-full space-y-5 text-center">
-            <h2
-              id="success-alert-label"
-              class="text-center font-avenir-semibold text-xl sm:text-2xl"
-            >
-              Заявка успешно отправлена
-            </h2>
-            <p class="text-sm">Наш менеджер свяжется с вами в ближайшее время</p>
-            <button
-              type="button"
-              class="link link-primary mx-auto h-12 w-fit px-16 sm:h-14"
-              data-twe-modal-dismiss
-              aria-label="Close"
-            >
-              Понятно
-            </button>
-          </div>
-          <button
-            type="button"
-            class="absolute right-4 top-4 box-content rounded-none border-none text-gray transition-colors hover:text-primary hover:no-underline focus:text-primary focus:outline-none sm:right-8 sm:top-8"
-            data-twe-modal-dismiss
-            aria-label="Close"
-          >
-            <svg
-              width="32"
-              height="32"
-              viewBox="0 0 32 32"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M20.0003 11.9993L12.0003 19.9993M12.0003 11.9993L20.0003 19.9993M29.3337 15.9993C29.3337 23.3631 23.3641 29.3327 16.0003 29.3327C8.63653 29.3327 2.66699 23.3631 2.66699 15.9993C2.66699 8.63555 8.63653 2.66602 16.0003 2.66602C23.3641 2.66602 29.3337 8.63555 29.3337 15.9993Z"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-            </svg>
-          </button>
-        </div>
-      </div>
-    </div>
-
-    <!-- ERROR ALERT -->
-    <div
-      id="error-alert"
-      data-twe-modal-init
-      class="fixed left-0 top-0 z-[1055] hidden h-full w-full overflow-y-auto overflow-x-hidden outline-none"
-      tabindex="-1"
-      aria-labelledby="error-alert-label"
-      aria-hidden="true"
-    >
-      <div
-        data-twe-modal-dialog-ref
-        class="pointer-events-none relative flex min-h-[calc(100%-1rem)] w-auto translate-y-[-50px] items-center p-4 opacity-0 transition-all duration-300 ease-in-out sm:mx-auto sm:max-w-[550px]"
-      >
-        <div
-          class="pointer-events-auto relative flex w-full items-center justify-between rounded-[32px] border border-solid border-stroke bg-black bg-clip-padding px-4 py-6 outline-none sm:px-8 sm:py-12"
-        >
-          <div class="w-full space-y-5 text-center">
-            <h2 id="error-alert-label" class="font-avenir-semibold text-xl sm:text-2xl">
-              Щось пішло не так...
-            </h2>
-            <p class="text-sm">Спробуйте, будь ласка, відправити заяку пізніше</p>
-            <button
-              type="button"
-              class="link link-primary mx-auto h-12 w-fit px-16 sm:h-14"
-              data-twe-modal-dismiss
-              aria-label="Close"
-            >
-              Понятно
-            </button>
-          </div>
-          <button
-            type="button"
-            class="absolute right-4 top-4 box-content rounded-none border-none text-gray transition-colors hover:text-primary hover:no-underline focus:text-primary focus:outline-none sm:right-8 sm:top-8"
-            data-twe-modal-dismiss
-            aria-label="Close"
-          >
-            <svg
-              width="32"
-              height="32"
-              viewBox="0 0 32 32"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M20.0003 11.9993L12.0003 19.9993M12.0003 11.9993L20.0003 19.9993M29.3337 15.9993C29.3337 23.3631 23.3641 29.3327 16.0003 29.3327C8.63653 29.3327 2.66699 23.3631 2.66699 15.9993C2.66699 8.63555 8.63653 2.66602 16.0003 2.66602C23.3641 2.66602 29.3337 8.63555 29.3337 15.9993Z"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-            </svg>
-          </button>
-        </div>
-      </div>
-    </div>
 
     <script type="module" src="/src/main.ts"></script>
   </body>

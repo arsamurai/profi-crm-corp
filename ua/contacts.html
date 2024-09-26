@@ -74,21 +74,54 @@
           </a>
           <nav
             id="menu"
-            class="fixed inset-0 top-[49px] flex h-[calc(100vh-49px)] translate-x-full flex-col justify-between bg-black px-4 pb-6 pt-3 transition-transform sm:top-[81px] sm:h-[calc(100vh-81px)] lg:static lg:top-0 lg:h-fit lg:translate-x-0 lg:bg-transparent lg:p-0 [&.active]:translate-x-0"
+            class="fixed inset-0 top-[49px] flex h-[calc(100vh-49px)] translate-x-full flex-col justify-center gap-8 bg-black px-4 pb-6 pt-3 transition-transform sm:top-[81px] sm:h-[calc(100vh-81px)] lg:static lg:top-0 lg:h-fit lg:translate-x-0 lg:gap-10 lg:bg-transparent lg:p-0 [&.active]:translate-x-0"
           >
             <ul
-              class="flex h-fit flex-col lg:flex-row lg:items-center lg:justify-center lg:gap-10 lg:text-sm"
+              class="flex h-fit flex-col justify-center gap-8 lg:flex-row lg:items-center lg:gap-10"
             >
-              <li class="menu-link" data-menu-link>
-                <a href="/ua/tarifs" class="menu-link block py-3 lg:py-0">Тарифи</a>
+              <li class="text-center">
+                <a href="/ua/tarifs" class="menu-link" data-menu-link>Тарифи</a>
               </li>
-              <li class="menu-link" data-menu-link>
-                <a href="/ua/blog" class="menu-link block py-3 lg:py-0">Новини</a>
+              <li class="text-center">
+                <a href="/ua/blog" class="menu-link" data-menu-link>Новини</a>
               </li>
-              <li class="menu-link" data-menu-link>
-                <a href="/ua/contacts" class="menu-link block py-3 lg:py-0">Контакти</a>
+              <li class="text-center">
+                <a href="/ua/contacts" class="menu-link" data-menu-link>Контакти</a>
               </li>
             </ul>
+            <div class="mx-auto flex flex-col gap-4 lg:hidden">
+              <a href="/ua/sign-up" class="link link-primary h-10 w-full px-5"
+                >15 днів безкоштовного доступу
+              </a>
+            </div>
+            <svg
+              width="150"
+              height="122"
+              viewBox="0 0 150 122"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              class="absolute left-0 top-0 lg:hidden"
+            >
+              <path
+                opacity="0.32"
+                d="M32.532 45.0549C-0.0078165 6.94551 -48.0109 -32.1346 -9.76953 -64.7871L-13.043 -85.3777C-66.1382 -40.0423 -39.5305 15.14 5.6275 68.0274C30.3975 97.0371 67.2601 113.209 105.328 112.066L107.108 121.754L150.004 85.1273L96.9434 66.4281L98.8431 76.7802C73.4033 75.997 49.1803 64.5528 32.532 45.0549Z"
+                fill="#444CE6"
+              />
+            </svg>
+            <svg
+              width="150"
+              height="119"
+              viewBox="0 0 150 119"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              class="absolute bottom-0 right-0 lg:hidden"
+            >
+              <path
+                opacity="0.32"
+                d="M117.472 77.1589C150.012 115.268 198.015 154.348 159.773 187.001L163.047 207.592C216.142 162.256 189.534 107.074 144.376 54.1865C119.606 25.1768 82.7438 9.00473 44.6763 10.1478L42.8964 0.459644L0.000209526 37.0866L53.0605 55.7857L51.1608 45.4336C76.6007 46.2168 100.824 57.6611 117.472 77.1589Z"
+                fill="#444CE6"
+              />
+            </svg>
           </nav>
           <div class="flex items-center gap-6">
             <div class="relative" data-twe-dropdown-ref>
@@ -142,14 +175,11 @@
               </ul>
             </div>
             <div class="hidden lg:block">
-              <a
-                href="/sign-up"
-                target="_blank"
-                class="link link-secondary h-10 w-full px-5 sm:w-fit"
-                >Зареєструватись
+              <a href="/ua/sign-up" class="link link-primary h-10 w-full px-5 sm:w-fit"
+                >15 днів безкоштовного доступу
               </a>
             </div>
-            <a href="/sign-up" class="lg:hidden">
+            <a href="/ua/sign-up" class="lg:hidden">
               <svg
                 width="16"
                 height="18"
@@ -183,7 +213,7 @@
       </div>
     </header>
 
-    <main id="contacts-page" class="pt-6 sm:pt-9 xl:pt-12">
+    <main id="contacts-page" class="grid pt-6 sm:pt-9 xl:pt-12">
       <div class="container">
         <div class="mb-10 sm:w-5/12">
           <h1 class="mb-4 font-avenir-semibold text-2xl xs:text-4xl sm:mb-6 sm:text-5xl">
@@ -395,11 +425,11 @@
 
     <!-- SUCCESS ALERT -->
     <div
-      id="success-alert"
+      id="application-success"
       data-twe-modal-init
       class="fixed left-0 top-0 z-[1055] hidden h-full w-full overflow-y-auto overflow-x-hidden outline-none"
       tabindex="-1"
-      aria-labelledby="success-alert-label"
+      aria-labelledby="application-success-label"
       aria-hidden="true"
     >
       <div
@@ -411,19 +441,19 @@
         >
           <div class="w-full space-y-5 text-center">
             <h2
-              id="success-alert-label"
+              id="application-success-label"
               class="text-center font-avenir-semibold text-xl sm:text-2xl"
             >
-              Заявка успешно отправлена
+              Заявка успішно отримана
             </h2>
-            <p class="text-sm">Наш менеджер свяжется с вами в ближайшее время</p>
+            <p class="text-sm">Менеджер звʼяжеться з Вами найблищим часом</p>
             <button
               type="button"
               class="link link-primary mx-auto h-12 w-fit px-16 sm:h-14"
               data-twe-modal-dismiss
               aria-label="Close"
             >
-              Понятно
+              Зрозуміло
             </button>
           </div>
           <button
@@ -454,11 +484,11 @@
 
     <!-- ERROR ALERT -->
     <div
-      id="error-alert"
+      id="application-error"
       data-twe-modal-init
       class="fixed left-0 top-0 z-[1055] hidden h-full w-full overflow-y-auto overflow-x-hidden outline-none"
       tabindex="-1"
-      aria-labelledby="error-alert-label"
+      aria-labelledby="application-error-label"
       aria-hidden="true"
     >
       <div
@@ -469,7 +499,7 @@
           class="pointer-events-auto relative flex w-full items-center justify-between rounded-[32px] border border-solid border-stroke bg-black bg-clip-padding px-4 py-6 outline-none sm:px-8 sm:py-12"
         >
           <div class="w-full space-y-5 text-center">
-            <h2 id="error-alert-label" class="font-avenir-semibold text-xl sm:text-2xl">
+            <h2 id="application-error-label" class="font-avenir-semibold text-xl sm:text-2xl">
               Щось пішло не так...
             </h2>
             <p class="text-sm">Спробуйте, будь ласка, відправити заяку пізніше</p>
@@ -479,7 +509,7 @@
               data-twe-modal-dismiss
               aria-label="Close"
             >
-              Понятно
+              Зрозуміло
             </button>
           </div>
           <button

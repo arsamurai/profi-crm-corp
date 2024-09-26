@@ -48,7 +48,7 @@
     font-family: "Avenir Regular";
     src:
       url("/fonts/Avenir/AvenirNextCyr-Regular.eot") format("embedded-opentype"),
-      url("/fonts/Avenir/AvenirNextCyr-Regular.otf") format("opentype"),
+      url("/fonts/Avenir/AvenirNextCyr-Regular.ttf") format("truetype"),
       url("/fonts/Avenir/AvenirNextCyr-Regular.woff") format("woff");
     font-weight: 400;
     font-style: normal;
@@ -57,7 +57,7 @@
     font-family: "Avenir Medium";
     src:
       url("/fonts/Avenir/AvenirNextCyr-Medium.eot") format("embedded-opentype"),
-      url("/fonts/Avenir/AvenirNextCyr-Medium.otf") format("opentype"),
+      url("/fonts/Avenir/AvenirNextCyr-Medium.ttf") format("truetype"),
       url("/fonts/Avenir/AvenirNextCyr-Medium.woff") format("woff");
     font-weight: 500;
     font-style: normal;
@@ -66,7 +66,7 @@
     font-family: "Avenir SemiBold";
     src:
       url("/fonts/Avenir/AvenirNextCyr-Demi.eot") format("embedded-opentype"),
-      url("/fonts/Avenir/AvenirNextCyr-Demi.otf") format("opentype"),
+      url("/fonts/Avenir/AvenirNextCyr-Demi.ttf") format("truetype"),
       url("/fonts/Avenir/AvenirNextCyr-Demi.woff") format("woff");
     font-weight: 700;
     font-style: normal;
@@ -90,8 +90,9 @@ body {
   }
 
   .menu-link {
-    @apply border-b border-solid border-stroke transition-colors hover:text-primary lg:border-none;
+    @apply transition-colors hover:text-primary text-xl lg:text-sm font-avenir-semibold lg:font-avenir-regular;
   }
+
   .section-title {
     @apply font-avenir-semibold text-2xl sm:text-4xl;
   }

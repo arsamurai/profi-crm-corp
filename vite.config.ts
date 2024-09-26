@@ -9,11 +9,12 @@ export default defineConfig({
       input: {
         main: resolve(__dirname, "ua/index.html"),
         404: resolve(__dirname, "404.html"),
-        privacy: resolve(__dirname, "ua/privacy.html"),
+        terms: resolve(__dirname, "ua/terms.html"),
         tarifs: resolve(__dirname, "ua/tarifs.html"),
         contacts: resolve(__dirname, "ua/contacts.html"),
         blog: resolve(__dirname, "ua/blog.html"),
         article: resolve(__dirname, "ua/article.html"),
+        signUp: resolve(__dirname, "ua/sign-up.html"),
       },
     },
   },

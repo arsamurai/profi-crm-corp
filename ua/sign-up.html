@@ -159,7 +159,7 @@
                 <li>
                   <a
                     class="block w-full whitespace-nowrap bg-primary-bg px-4 py-2 text-sm transition-colors hover:bg-hovered hover:text-white focus:bg-focused focus:outline-none"
-                    href="/ua/tarifs"
+                    href="/ua/sign-up"
                     data-twe-dropdown-item-ref
                     >ua</a
                   >
@@ -167,7 +167,7 @@
                 <li>
                   <a
                     class="block w-full whitespace-nowrap bg-primary-bg px-4 py-2 text-sm transition-colors hover:bg-hovered hover:text-white focus:bg-focused focus:outline-none"
-                    href="/ru/tarifs"
+                    href="/ru/sign-up"
                     data-twe-dropdown-item-ref
                     >ru</a
                   >
@@ -213,175 +213,189 @@
       </div>
     </header>
 
-    <main
-      id="tarifs-page"
-      class="relative flex items-center overflow-hidden py-8 sm:py-12 xl:h-[calc(100vh-128px)] xl:min-h-[1010px] xl:py-16"
-    >
-      <div class="container max-w-[1344px]">
-        <div class="grid gap-4 md:grid-cols-2 xl:grid-cols-3">
-          <div class="flex flex-row justify-between md:flex-col">
-            <div class="space-y-3 sm:space-y-4">
-              <h3 class="section-title">Тарифи</h3>
-              <div class="flex items-center gap-3">
-                <svg
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M22 11.0799V11.9999C21.9988 14.1563 21.3005 16.2545 20.0093 17.9817C18.7182 19.7088 16.9033 20.9723 14.8354 21.5838C12.7674 22.1952 10.5573 22.1218 8.53447 21.3744C6.51168 20.6271 4.78465 19.246 3.61096 17.4369C2.43727 15.6279 1.87979 13.4879 2.02168 11.3362C2.16356 9.18443 2.99721 7.13619 4.39828 5.49694C5.79935 3.85768 7.69279 2.71525 9.79619 2.24001C11.8996 1.76477 14.1003 1.9822 16.07 2.85986M22 3.99986L12 14.0099L9.00001 11.0099"
-                    stroke="#444CE7"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </svg>
-                <span class="block-title font-avenir-semibold">5000 записів</span>
-              </div>
-              <div class="flex items-center gap-3">
-                <svg
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M22 11.0799V11.9999C21.9988 14.1563 21.3005 16.2545 20.0093 17.9817C18.7182 19.7088 16.9033 20.9723 14.8354 21.5838C12.7674 22.1952 10.5573 22.1218 8.53447 21.3744C6.51168 20.6271 4.78465 19.246 3.61096 17.4369C2.43727 15.6279 1.87979 13.4879 2.02168 11.3362C2.16356 9.18443 2.99721 7.13619 4.39828 5.49694C5.79935 3.85768 7.69279 2.71525 9.79619 2.24001C11.8996 1.76477 14.1003 1.9822 16.07 2.85986M22 3.99986L12 14.0099L9.00001 11.0099"
-                    stroke="#444CE7"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </svg>
-                <span class="block-title font-avenir-semibold">5Gb сховища</span>
-              </div>
-            </div>
-            <img
-              src="/images/bag.png"
-              alt="bag-img"
-              class="h-[100px] w-[91px] object-contain sm:h-[140px] sm:w-[127px]"
+    <main id="registration-page" class="grid gap-8 sm:grid-cols-2 sm:gap-6">
+      <div
+        class="relative flex w-full items-center justify-center px-4 pt-6 sm:h-[calc(100vh-81px)] sm:min-h-[600px] sm:pr-0"
+      >
+        <form
+          action="#"
+          id="registration-form"
+          class="w-full max-w-[400px] space-y-4 sm:-mt-28 sm:space-y-5"
+        >
+          <h1 class="font-avenir-semibold text-2xl">Реєстрація</h1>
+          <div class="space-y-1.5">
+            <label for="name" class="block select-none text-sm">Ім'я</label>
+            <input
+              id="name"
+              type="text"
+              placeholder="Ваше ім'я"
+              required
+              class="flex h-12 w-full rounded-xl border border-solid border-transparent bg-primary-bg px-3.5 py-3 text-base shadow-shadow-primary outline-none placeholder:text-gray"
             />
           </div>
-          <div
-            class="flex w-full max-w-[500px] flex-col justify-between gap-4 justify-self-center overflow-hidden rounded-3xl bg-primary-bg px-4 py-12 sm:gap-6 sm:py-16 md:max-w-full"
-          >
-            <h4 class="text-center font-avenir-semibold text-xl tracking-[0.02em]">
-              Старт (безкоштовний тестовий тариф)
-            </h4>
-            <p class="text-center">Ідеально для першого знайомства з системою</p>
-            <ul>
-              <li
-                class="relative pl-6 before:absolute before:left-2 before:top-2 before:size-1.5 before:rounded-full before:bg-white"
-              >
-                Необмежена кількість користувачів
-              </li>
-              <li
-                class="relative pl-6 before:absolute before:left-2 before:top-2 before:size-1.5 before:rounded-full before:bg-white"
-              >
-                200 замовлень
-              </li>
-            </ul>
-            <h6 class="text-center font-avenir-semibold text-5xl">0$</h6>
-            <a href="#" class="link link-primary h-14 w-full">
-              <div class="text-base">Подключить</div>
-            </a>
+          <div class="space-y-1.5">
+            <label for="phone" class="block select-none text-sm">Телефон</label>
+            <input
+              id="phone"
+              type="tel"
+              placeholder="+38 (ХХХ) ХХХ ХХ ХХ"
+              required
+              class="flex h-12 w-full rounded-xl border border-solid border-transparent bg-primary-bg px-3.5 py-3 text-base shadow-shadow-primary outline-none placeholder:text-gray"
+            />
           </div>
-          <div
-            class="flex w-full max-w-[500px] flex-col justify-between gap-4 justify-self-center overflow-hidden rounded-3xl bg-primary px-4 py-12 sm:gap-6 sm:py-16 md:max-w-full"
-          >
-            <h4 class="text-center font-avenir-semibold text-xl tracking-[0.02em]">Базовий</h4>
-            <p class="text-center">Оптимальний для малого бізнесу</p>
-            <ul>
-              <li
-                class="relative pl-6 before:absolute before:left-2 before:top-2 before:size-1.5 before:rounded-full before:bg-white"
-              >
-                2 користувачі
-              </li>
-              <li
-                class="relative pl-6 before:absolute before:left-2 before:top-2 before:size-1.5 before:rounded-full before:bg-white"
-              >
-                200 замовлень/місяць
-              </li>
-            </ul>
-            <h6 class="text-center font-avenir-semibold text-5xl">9$</h6>
-            <a href="#" class="link link-tertiary h-14 w-full">
-              <div class="text-base">Подключить</div>
-            </a>
+          <div class="space-y-1.5">
+            <label for="telegram" class="block select-none text-sm">Пошта</label>
+            <input
+              id="email"
+              type="email"
+              placeholder="mail@gmail.com"
+              required
+              class="flex h-12 w-full rounded-xl border border-solid border-transparent bg-primary-bg px-3.5 py-3 text-base shadow-shadow-primary outline-none placeholder:text-gray"
+            />
           </div>
-          <div
-            class="flex w-full max-w-[500px] flex-col justify-between gap-4 justify-self-center overflow-hidden rounded-3xl bg-primary-bg px-4 py-12 sm:gap-6 sm:py-16 md:max-w-full"
-          >
-            <h4 class="text-center font-avenir-semibold text-xl tracking-[0.02em]">Професійний</h4>
-            <p class="text-center">Розширені можливості для бізнесу</p>
-            <ul>
-              <li
-                class="relative pl-6 before:absolute before:left-2 before:top-2 before:size-1.5 before:rounded-full before:bg-white"
-              >
-                3 користувачі
-              </li>
-              <li
-                class="relative pl-6 before:absolute before:left-2 before:top-2 before:size-1.5 before:rounded-full before:bg-white"
-              >
-                500 замовлень/місяць
-              </li>
-            </ul>
-            <h6 class="text-center font-avenir-semibold text-5xl">25$</h6>
-            <a href="#" class="link link-primary h-14 w-full">
-              <div class="text-base">Подключить</div>
-            </a>
+          <div class="space-y-1.5">
+            <label for="telegram" class="block select-none text-sm">Назва CRM</label>
+            <input
+              id="crmName"
+              type="text"
+              placeholder=".profi-crm.com"
+              class="flex h-12 w-full rounded-xl border border-solid border-transparent bg-primary-bg px-3.5 py-3 text-base shadow-shadow-primary outline-none placeholder:text-gray"
+            />
           </div>
-          <div
-            class="flex w-full max-w-[500px] flex-col justify-between gap-4 justify-self-center overflow-hidden rounded-3xl bg-primary px-4 py-12 sm:gap-6 sm:py-16 md:max-w-full"
-          >
-            <h4 class="text-center font-avenir-semibold text-xl tracking-[0.02em]">Бізнес</h4>
-            <p class="text-center">Ідеальний для середнього бізнесу</p>
-            <ul>
-              <li
-                class="relative pl-6 before:absolute before:left-2 before:top-2 before:size-1.5 before:rounded-full before:bg-white"
-              >
-                6 користувачів
-              </li>
-              <li
-                class="relative pl-6 before:absolute before:left-2 before:top-2 before:size-1.5 before:rounded-full before:bg-white"
-              >
-                1200 замовлень/місяць
-              </li>
-            </ul>
-            <h6 class="text-center font-avenir-semibold text-5xl">45$</h6>
-            <a href="#" class="link link-tertiary h-14 w-full">
-              <div class="text-base">Подключить</div>
-            </a>
-          </div>
-          <div
-            class="flex w-full max-w-[500px] flex-col justify-between gap-4 justify-self-center overflow-hidden rounded-3xl bg-primary-bg px-4 py-12 sm:gap-6 sm:py-16 md:max-w-full"
-          >
-            <h4 class="text-center font-avenir-semibold text-xl tracking-[0.02em]">
-              Корпоративний
-            </h4>
-            <p class="text-center">Максимальні можливості для великого бізнесу</p>
-            <ul>
-              <li
-                class="relative pl-6 before:absolute before:left-2 before:top-2 before:size-1.5 before:rounded-full before:bg-white"
-              >
-                50 користувачів
-              </li>
-              <li
-                class="relative pl-6 before:absolute before:left-2 before:top-2 before:size-1.5 before:rounded-full before:bg-white"
-              >
-                10000 замовлень/місяць
-              </li>
-            </ul>
-            <h6 class="text-center font-avenir-semibold text-5xl">95$</h6>
-            <a href="#" class="link link-primary h-14 w-full">
-              <div class="text-base">Подключить</div>
-            </a>
-          </div>
+          <button type="submit" class="link link-primary h-12 w-full sm:h-14">
+            Зареєструватись
+          </button>
+        </form>
+        <div
+          class="absolute bottom-0 left-0 hidden w-full justify-between p-4 pr-0 text-sm text-gray sm:flex lg:p-8"
+        >
+          <p>© Profi CRM 2024</p>
+          <a href="#">Privacy</a>
         </div>
       </div>
+      <div class="sm:h-[calc(100vh-81px)] sm:min-h-[600px] sm:w-full">
+        <img
+          src="/images/contacts.png"
+          alt="contacts-img"
+          class="h-full w-full object-cover object-center sm:rounded-l-[48px]"
+        />
+      </div>
     </main>
+
+    <!-- SUCCESS ALERT -->
+    <div
+      id="registration-success"
+      data-twe-modal-init
+      class="fixed left-0 top-0 z-[1055] hidden h-full w-full overflow-y-auto overflow-x-hidden outline-none"
+      tabindex="-1"
+      aria-labelledby="registration-success-label"
+      aria-hidden="true"
+    >
+      <div
+        data-twe-modal-dialog-ref
+        class="pointer-events-none relative flex min-h-[calc(100%-1rem)] w-auto translate-y-[-50px] items-center p-4 opacity-0 transition-all duration-300 ease-in-out sm:mx-auto sm:max-w-[550px]"
+      >
+        <div
+          class="pointer-events-auto relative flex w-full items-center justify-between rounded-[32px] border border-solid border-stroke bg-black bg-clip-padding px-4 py-6 outline-none sm:px-8 sm:py-12"
+        >
+          <div class="w-full space-y-5 text-center">
+            <h2
+              id="registration-success-label"
+              class="text-center font-avenir-semibold text-xl sm:text-2xl"
+            >
+              Заявка успішно отримана
+            </h2>
+            <p class="text-sm">Ми надішлемо логін та пароль на вказану Вами пошту</p>
+            <button
+              type="button"
+              class="link link-primary mx-auto h-12 w-fit px-16 sm:h-14"
+              data-twe-modal-dismiss
+              aria-label="Close"
+            >
+              Зрозуміло
+            </button>
+          </div>
+          <button
+            type="button"
+            class="absolute right-4 top-4 box-content rounded-none border-none text-gray transition-colors hover:text-primary hover:no-underline focus:text-primary focus:outline-none sm:right-8 sm:top-8"
+            data-twe-modal-dismiss
+            aria-label="Close"
+          >
+            <svg
+              width="32"
+              height="32"
+              viewBox="0 0 32 32"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M20.0003 11.9993L12.0003 19.9993M12.0003 11.9993L20.0003 19.9993M29.3337 15.9993C29.3337 23.3631 23.3641 29.3327 16.0003 29.3327C8.63653 29.3327 2.66699 23.3631 2.66699 15.9993C2.66699 8.63555 8.63653 2.66602 16.0003 2.66602C23.3641 2.66602 29.3337 8.63555 29.3337 15.9993Z"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- ERROR ALERT -->
+    <div
+      id="registration-error"
+      data-twe-modal-init
+      class="fixed left-0 top-0 z-[1055] hidden h-full w-full overflow-y-auto overflow-x-hidden outline-none"
+      tabindex="-1"
+      aria-labelledby="registration-error-label"
+      aria-hidden="true"
+    >
+      <div
+        data-twe-modal-dialog-ref
+        class="pointer-events-none relative flex min-h-[calc(100%-1rem)] w-auto translate-y-[-50px] items-center p-4 opacity-0 transition-all duration-300 ease-in-out sm:mx-auto sm:max-w-[550px]"
+      >
+        <div
+          class="pointer-events-auto relative flex w-full items-center justify-between rounded-[32px] border border-solid border-stroke bg-black bg-clip-padding px-4 py-6 outline-none sm:px-8 sm:py-12"
+        >
+          <div class="w-full space-y-5 text-center">
+            <h2 id="registration-error-label" class="font-avenir-semibold text-xl sm:text-2xl">
+              Щось пішло не так...
+            </h2>
+            <p class="text-sm">Спробуйте, будь ласка, відправити заяку пізніше</p>
+            <button
+              type="button"
+              class="link link-primary mx-auto h-12 w-fit px-16 sm:h-14"
+              data-twe-modal-dismiss
+              aria-label="Close"
+            >
+              Зрозуміло
+            </button>
+          </div>
+          <button
+            type="button"
+            class="absolute right-4 top-4 box-content rounded-none border-none text-gray transition-colors hover:text-primary hover:no-underline focus:text-primary focus:outline-none sm:right-8 sm:top-8"
+            data-twe-modal-dismiss
+            aria-label="Close"
+          >
+            <svg
+              width="32"
+              height="32"
+              viewBox="0 0 32 32"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M20.0003 11.9993L12.0003 19.9993M12.0003 11.9993L20.0003 19.9993M29.3337 15.9993C29.3337 23.3631 23.3641 29.3327 16.0003 29.3327C8.63653 29.3327 2.66699 23.3631 2.66699 15.9993C2.66699 8.63555 8.63653 2.66602 16.0003 2.66602C23.3641 2.66602 29.3337 8.63555 29.3337 15.9993Z"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
 
     <script type="module" src="/src/main.ts"></script>
   </body>

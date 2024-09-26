@@ -1,22 +1,25 @@
 import { Modal } from "tw-elements"
 
-const form = document.getElementById("contacts-form") as HTMLFormElement
-const applicationModal = new Modal(document.getElementById("application-modal"))
-const successAlert = new Modal(document.getElementById("application-success"))
-const errorAlert = new Modal(document.getElementById("application-error"))
+const form = document.getElementById("registration-form") as HTMLFormElement
+const successAlert = new Modal(document.getElementById("registration-success"))
+const errorAlert = new Modal(document.getElementById("registration-error"))
 
 form?.addEventListener("submit", function (event: Event) {
   event.preventDefault()
 
   const nameInput = document.getElementById("name") as HTMLInputElement
   const phoneInput = document.getElementById("phone") as HTMLInputElement
-  const telegramInput = document.getElementById("telegram") as HTMLInputElement
+  const emailInput = document.getElementById("email") as HTMLInputElement
+  const crmNameInput = document.getElementById("crmName") as HTMLInputElement
 
   const formValues = {
     name: nameInput.value,
     phone: phoneInput.value.replace(/\D/g, ""),
-    telegram: telegramInput.value,
+    email: emailInput.value,
+    crmName: crmNameInput.value,
   }
+
+  console.log(JSON.stringify(formValues),)
 
   if (formValues.phone.length !== 12) {
     phoneInput.style.borderColor = "red"
@@ -29,16 +32,15 @@ form?.addEventListener("submit", function (event: Event) {
       body: JSON.stringify(formValues),
     })
       .then(() => {
-        applicationModal.hide()
         successAlert.show()
       })
       .catch(() => {
-        applicationModal.hide()
         errorAlert.show()
       })
       .finally(() => {
         nameInput.value = ""
-        telegramInput.value = ""
+        emailInput.value = ""
+        crmNameInput.value = ""
         phoneInput.value = ""
         phoneInput.style.borderColor = "transparent"
       })
