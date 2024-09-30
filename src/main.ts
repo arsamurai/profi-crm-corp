@@ -8,5 +8,6 @@ import "./components/review"
 import "./components/contacts-form"
 import "./components/registration-form"
 import "./components/sphere-parallax"
+import "./components/move-img"
 
 import "./style.css"
