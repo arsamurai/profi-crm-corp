@@ -7,5 +7,6 @@ import "./components/swiper"
 import "./components/review"
 import "./components/contacts-form"
 import "./components/registration-form"
+import "./components/sphere-parallax"
 
 import "./style.css"

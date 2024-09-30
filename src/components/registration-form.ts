@@ -19,8 +19,6 @@ form?.addEventListener("submit", function (event: Event) {
     crmName: crmNameInput.value,
   }
 
-  console.log(JSON.stringify(formValues),)
-
   if (formValues.phone.length !== 12) {
     phoneInput.style.borderColor = "red"
   } else {

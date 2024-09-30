@@ -50,6 +50,32 @@ export default {
       },
       backgroundImage: {
         "black-gradient": "linear-gradient(94.68deg, #21293B 0%, #1D1F22 100%)",
+        "sphere-parallax": 'url("/images/sphere.png")',
+      },
+      keyframes: {
+        "slide-down": {
+          "0%": {
+            transform: "translateY(-25%)",
+            opacity: "0",
+          },
+          "100%": {
+            transform: "translateY(0)",
+            opacity: "1",
+          },
+        },
+        "slide-left": {
+          "0%": {
+            transform: "translateX(25%)",
+            opacity: "0",
+          },
+          "100%": {
+            transform: "translateX(0)",
+            opacity: "1",
+          },
+        },
+      },
+      animation: {
+        "slide-down": "slide-down 1s ease-out forwards",
       },
     },
   },
