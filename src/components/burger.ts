@@ -7,7 +7,7 @@ const setModalState = (btn: HTMLElement, menu: HTMLElement, activate: boolean): 
 
 const burger = document.getElementById("burger") as HTMLButtonElement
 const menu = document.getElementById("menu") as HTMLElement
-const menuLinks = menu?.querySelectorAll("[data-menu-link]") as NodeListOf<HTMLLIElement>
+const menuLinks = menu?.querySelectorAll("[data-menu-link]") as NodeListOf<HTMLAnchorElement>
 
 burger?.addEventListener("click", ({ currentTarget }) => {
   const target = currentTarget as HTMLElement
@@ -17,13 +17,13 @@ burger?.addEventListener("click", ({ currentTarget }) => {
 })
 
 menuLinks?.forEach(link => {
-  const linkTagA = link?.querySelector("a")
-
   link.addEventListener("click", () => {
     setModalState(burger, menu, false)
   })
 
-  if (linkTagA?.href === window.location.href) {
-    linkTagA.classList.add("text-primary")
+  console.log(link, window.location.href)
+
+  if (link?.href === window.location.href) {
+    link.classList.add("text-primary")
   }
 })

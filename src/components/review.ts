@@ -2,7 +2,7 @@ const toggleReviewVisibility = (text: HTMLParagraphElement, button: HTMLButtonEl
   const isCollapsed = text.classList.contains("line-clamp-6")
 
   text.classList.toggle("line-clamp-6", !isCollapsed)
-  button.innerText = isCollapsed ? "Сховати" : "Показать полностью"
+  button.innerText = isCollapsed ? "Сховати" : "Показати повністю"
 }
 
 const shouldShowButton = (text: HTMLParagraphElement): boolean => {
@@ -27,5 +27,5 @@ const getReviewText = () => {
   })
 }
 
-window.addEventListener("load", getReviewText)
+document.addEventListener("DOMContentLoaded", getReviewText)
 window.addEventListener("resize", getReviewText)

@@ -65,7 +65,8 @@ const swipers = {
       },
     }),
 }
-window.addEventListener("load", () => {
+
+document.addEventListener("DOMContentLoaded", () => {
   swipers.reviewsSwiper()
   swipers.integrationsSwiper()
   swipers.blogSwiper()
