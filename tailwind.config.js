@@ -29,7 +29,6 @@ export default {
         primary: "rgba(68, 76, 231, 1)",
         hovered: "rgba(53, 56, 205, 1)",
         focused: "rgba(45, 49, 166, 1)",
-        disabled: "var(--color-disabled)",
         secondary: "rgba(208, 213, 221, 1)",
         stroke: "rgba(42, 49, 64, 1)",
       },

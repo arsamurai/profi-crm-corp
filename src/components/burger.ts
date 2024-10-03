@@ -21,8 +21,6 @@ menuLinks?.forEach(link => {
     setModalState(burger, menu, false)
   })
 
-  console.log(link, window.location.href)
-
   if (link?.href === window.location.href) {
     link.classList.add("text-primary")
   }

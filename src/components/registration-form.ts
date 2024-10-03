@@ -11,18 +11,20 @@ form?.addEventListener("submit", function (event: Event) {
   const phoneInput = document.getElementById("phone") as HTMLInputElement
   const emailInput = document.getElementById("email") as HTMLInputElement
   const crmNameInput = document.getElementById("crmName") as HTMLInputElement
+  const tarifValues = localStorage.getItem("tarif")
 
   const formValues = {
     name: nameInput.value,
     phone: phoneInput.value.replace(/\D/g, ""),
     email: emailInput.value,
     crmName: crmNameInput.value,
+    tarif: tarifValues ? JSON.parse(tarifValues) : null,
   }
 
   if (formValues.phone.length !== 12) {
     phoneInput.style.borderColor = "red"
   } else {
-    fetch("/api/support", {
+    fetch("/api/sign-up", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -31,6 +33,7 @@ form?.addEventListener("submit", function (event: Event) {
     })
       .then(() => {
         successAlert.show()
+        console.log(JSON.stringify(formValues))
       })
       .catch(() => {
         errorAlert.show()
@@ -41,6 +44,7 @@ form?.addEventListener("submit", function (event: Event) {
         crmNameInput.value = ""
         phoneInput.value = ""
         phoneInput.style.borderColor = "transparent"
+        localStorage.removeItem("tarif")
       })
   }
 })

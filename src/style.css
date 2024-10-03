@@ -90,9 +90,8 @@ body {
   }
 
   .menu-link {
-    @apply transition-colors hover:text-primary text-xl lg:text-sm font-avenir-semibold lg:font-avenir-regular;
+    @apply font-avenir-semibold text-xl transition-colors hover:text-primary lg:font-avenir-regular lg:text-sm;
   }
-
   .section-title {
     @apply font-avenir-semibold text-2xl sm:text-4xl;
   }
@@ -119,10 +118,10 @@ body {
     @apply flex items-center gap-1;
   }
   .pagination-text {
-    @apply flex size-10 items-center justify-center text-gray
+    @apply flex size-10 items-center justify-center text-gray;
   }
   .pagination-text.active {
-    @apply text-white
+    @apply text-white;
   }
   .pagination-link a {
     @apply flex size-10 cursor-pointer items-center justify-center rounded-lg font-avenir-medium text-sm text-gray transition-colors hover:bg-gray hover:text-white;
@@ -135,5 +134,36 @@ body {
   }
   .pagination-btn.disabled {
     @apply pointer-events-none cursor-default text-stroke opacity-30;
+  }
+
+  .article-content h2 {
+    @apply font-inter-semibold text-xl md:text-2xl;
+  }
+  .article-content h3 {
+    @apply font-inter-semibold text-base md:text-xl;
+  }
+  .article-content iframe {
+    @apply h-80 w-full rounded-2xl md:h-[420px] lg:h-[520px];
+  }
+  .article-content a {
+    @apply text-primary transition-colors hover:text-hovered;
+  }
+  .article-content strong {
+    @apply font-inter-semibold;
+  }
+  .article-content i {
+    @apply italic;
+  }
+  .article-content blockquote {
+    @apply border-l-4 border-solid border-stroke pl-5 italic;
+  }
+  .article-content li {
+    @apply ml-4 list-item;
+  }
+  .article-content ul li {
+    @apply list-disc;
+  }
+  .article-content ol li {
+    @apply list-decimal;
   }
 }
