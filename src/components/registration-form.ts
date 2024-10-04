@@ -33,7 +33,6 @@ form?.addEventListener("submit", function (event: Event) {
     })
       .then(() => {
         successAlert.show()
-        console.log(JSON.stringify(formValues))
       })
       .catch(() => {
         errorAlert.show()
