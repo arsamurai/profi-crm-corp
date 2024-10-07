@@ -1,15 +1,22 @@
 document.addEventListener("mousemove", event => {
-  const moveImg = document.querySelector("[data-move-img]") as HTMLImageElement
+  const image = document.querySelector("[data-move-img]") as HTMLImageElement
 
-  if (moveImg) {
+  if (image && window.innerWidth >= 1024) {
     const windowWidth = window.innerWidth
     const windowHeight = window.innerHeight
-    const imgWidth = moveImg.offsetWidth
-    const imgHeight = moveImg.offsetHeight
+    const imgWidth = image.offsetWidth
+    const imgHeight = image.offsetHeight
 
     const moveX = ((event.clientX / windowWidth) * 10 - 10) * (imgWidth / 500)
     const moveY = ((event.clientY / windowHeight) * 10 - 10) * (imgHeight / 500)
 
-    moveImg.style.transform = `translate(${moveX}px, ${moveY}px)`
+    image.style.transform = `translate(${moveX}px, ${moveY}px)`
+  }
+})
+
+window.addEventListener("resize", () => {
+  const image = document.querySelector("[data-move-img]") as HTMLImageElement
+  if (image && window.innerWidth < 1024) {
+    image.style.transform = ""
   }
 })
