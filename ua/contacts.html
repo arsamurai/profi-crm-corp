@@ -49,6 +49,11 @@
             </svg>
           </nav>
           <div class="flex items-center gap-6">
+            <div class="hidden lg:block">
+              <a href="/ua/sign-up" class="link link-primary h-10 w-full px-5 sm:w-fit"
+                >15 днів безкоштовного доступу
+              </a>
+            </div>
             <div class="relative" data-twe-dropdown-ref>
               <button
                 class="flex items-center text-secondary sm:py-2"
@@ -87,11 +92,6 @@
                 </li>
               </ul>
             </div>
-            <div class="hidden lg:block">
-              <a href="/ua/sign-up" class="link link-primary h-10 w-full px-5 sm:w-fit"
-                >15 днів безкоштовного доступу
-              </a>
-            </div>
             <a href="/ua/sign-up" class="lg:hidden">
               <svg width="16" height="18">
                 <use xlink:href="/sprite.svg#person"></use>
@@ -118,7 +118,7 @@
       <div class="container">
         <div class="mb-10 sm:w-5/12">
           <h1 class="mb-4 font-avenir-semibold text-2xl xs:text-4xl sm:mb-6 sm:text-5xl">
-            Контакты
+            Контакти
           </h1>
           <ul class="mb-6 space-y-5 sm:mb-12">
             <li>
@@ -322,7 +322,7 @@
             <h2 id="application-error-label" class="font-avenir-semibold text-xl sm:text-2xl">
               Щось пішло не так...
             </h2>
-            <p class="text-sm">Спробуйте, будь ласка, відправити заяку пізніше</p>
+            <p class="text-sm">Спробуйте, будь ласка, відправити заявку пізніше</p>
             <button
               type="button"
               class="link link-primary mx-auto h-12 w-fit px-16 sm:h-14"
@@ -345,6 +345,18 @@
         </div>
       </div>
     </div>
+
+    <!-- TELEGRAM BUTTON -->
+    <a
+      href="https://t.me/proficrm_support"
+      target="_blank"
+      class="fixed bottom-3 right-3 z-[1000] hidden transition-transform hover:scale-105"
+      data-telegram-btn
+    >
+      <svg width="44" height="44">
+        <use xlink:href="/sprite.svg#preview-telegram"></use>
+      </svg>
+    </a>
 
     <script type="module" src="/src/main.ts"></script>
   </body>

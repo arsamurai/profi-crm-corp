@@ -15,6 +15,7 @@ import "./components/registration-form"
 import "./components/footer-parallax"
 import "./components/move-img"
 import "./components/counter"
+import "./components/telegram-btn"
 
 //
 import "./style.css"

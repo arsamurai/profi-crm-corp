@@ -1,8 +1,16 @@
 const toggleReviewVisibility = (text: HTMLParagraphElement, button: HTMLButtonElement): void => {
   const isCollapsed = text.classList.contains("line-clamp-6")
+  const isRussian = window.location.pathname.includes("/ru")
 
   text.classList.toggle("line-clamp-6", !isCollapsed)
-  button.innerText = isCollapsed ? "Сховати" : "Показати повністю"
+
+  button.innerText = isCollapsed
+    ? isRussian
+      ? "Скрыть"
+      : "Сховати"
+    : isRussian
+      ? "Показать полностью"
+      : "Показати повністю"
 }
 
 const shouldShowButton = (text: HTMLParagraphElement): boolean => {

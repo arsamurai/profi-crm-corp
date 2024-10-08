@@ -1,0 +1,361 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="/images/preview.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profi CRM</title>
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header
+      id="header"
+      class="sticky left-0 top-0 z-[999] border-b border-stroke bg-black py-2 sm:py-4"
+    >
+      <div class="container">
+        <div class="flex items-center justify-between">
+          <a href="/ru/">
+            <svg class="h-8 w-[120px] sm:h-12 sm:w-[180px]" width="180" height="48">
+              <use xlink:href="/sprite.svg#logo"></use>
+            </svg>
+          </a>
+          <nav
+            id="menu"
+            class="fixed inset-0 top-[49px] flex h-[calc(100dvh-49px)] translate-x-full flex-col justify-center gap-8 bg-black px-4 pb-6 pt-3 transition-transform sm:top-[81px] sm:h-[calc(100dvh-81px)] lg:static lg:top-0 lg:h-fit lg:translate-x-0 lg:gap-10 lg:bg-transparent lg:p-0 [&.active]:translate-x-0"
+          >
+            <ul
+              class="flex h-fit flex-col justify-center gap-8 lg:flex-row lg:items-center lg:gap-10"
+            >
+              <li class="text-center">
+                <a href="/ru/tarifs" class="menu-link" data-menu-link>Тарифы</a>
+              </li>
+              <li class="text-center">
+                <a href="/ru/blog" class="menu-link" data-menu-link>Новости</a>
+              </li>
+              <li class="text-center">
+                <a href="/ru/contacts" class="menu-link" data-menu-link>Контакты</a>
+              </li>
+            </ul>
+            <div class="mx-auto flex flex-col gap-4 lg:hidden">
+              <a href="/ru/sign-up" class="link link-primary h-10 w-full px-5"
+                >15 дней бесплатного доступа
+              </a>
+            </div>
+            <svg class="absolute left-0 top-0 lg:hidden" width="150" height="122">
+              <use xlink:href="/sprite.svg#header-left-arrow"></use>
+            </svg>
+            <svg class="absolute bottom-0 right-0 lg:hidden" width="150" height="119">
+              <use xlink:href="/sprite.svg#header-right-arrow"></use>
+            </svg>
+          </nav>
+          <div class="flex items-center gap-6">
+            <div class="hidden lg:block">
+              <a href="/ru/sign-up" class="link link-primary h-10 w-full px-5 sm:w-fit"
+                >15 дней бесплатного доступа
+              </a>
+            </div>
+            <div class="relative" data-twe-dropdown-ref>
+              <button
+                class="flex items-center text-secondary sm:py-2"
+                type="button"
+                id="dropdown-language"
+                data-twe-dropdown-toggle-ref
+                aria-expanded="false"
+              >
+                <span class="me-2">
+                  <svg width="20" height="20">
+                    <use xlink:href="/sprite.svg#world"></use>
+                  </svg>
+                </span>
+                ru
+              </button>
+              <ul
+                class="absolute z-[1000] float-left m-0 hidden min-w-max list-none overflow-hidden rounded-lg border border-solid border-stroke bg-primary-bg bg-clip-padding py-2 data-[twe-dropdown-show]:block"
+                aria-labelledby="dropdown-language"
+                data-twe-dropdown-menu-ref
+              >
+                <li>
+                  <a
+                    class="block w-full whitespace-nowrap bg-primary-bg px-4 py-2 text-sm transition-colors hover:bg-hovered hover:text-white focus:bg-focused focus:outline-none"
+                    href="/ua/terms"
+                    data-twe-dropdown-item-ref
+                    >ua</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="block w-full whitespace-nowrap bg-primary-bg px-4 py-2 text-sm transition-colors hover:bg-hovered hover:text-white focus:bg-focused focus:outline-none"
+                    href="/ru/terms"
+                    data-twe-dropdown-item-ref
+                    >ru</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <a href="/ru/sign-up" class="lg:hidden">
+              <svg width="16" height="18">
+                <use xlink:href="/sprite.svg#person"></use>
+              </svg>
+            </a>
+            <button
+              id="burger"
+              class="flex size-5 cursor-pointer flex-col justify-center px-px py-1 lg:hidden [&.active>.first]:translate-y-[2px] [&.active>.first]:rotate-45 [&.active>.second]:pointer-events-none [&.active>.second]:translate-x-full [&.active>.second]:opacity-0 [&.active>.third]:-translate-y-[2px] [&.active>.third]:-rotate-45"
+            >
+              <span
+                class="first h-0.5 w-[18px] -translate-y-1 rounded-sm bg-primary transition-all"
+              ></span>
+              <span class="second h-0.5 w-[14px] rounded-sm bg-primary transition-all"></span>
+              <span
+                class="third h-0.5 w-[18px] translate-y-1 rounded-sm bg-primary transition-all"
+              ></span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main id="terms-page" class="bg-black py-8 sm:py-12">
+      <div class="container max-w-[808px]">
+        <div class="space-y-8 sm:space-y-12">
+          <h1 class="font-avenir-semibold text-4xl sm:text-5xl">Условия использования ProfiCRM</h1>
+          <div class="space-y-6">
+            <h4 class="font-avenir-semibold text-xl">1. Общие положения</h4>
+            <p>
+              Эти Условия использования регулируют доступ и использование CRM-системы ProfiCRM
+              (далее - «Система»). Используя Систему, вы соглашаетесь со всеми положениями этих
+              Условий. Система разработана для бизнеса, предлагая функции управления клиентами,
+              автоматизации продаж и интеграции с маркетплейсами и платежными сервисами.
+            </p>
+          </div>
+          <div class="space-y-6">
+            <h4 class="font-avenir-semibold text-xl">2. Обработка и защита персональных данных</h4>
+            <div class="space-y-4">
+              <h5 class="font-avenir-semibold text-base">2.1. Обработка данных</h5>
+              <p>
+                Пользователи обязаны предоставить правдивую информацию при регистрации и
+                использовании Системы. Ваша информация может включать контактные данные, детали
+                транзакций, историю взаимодействия с клиентами и тому подобное. Данные используются
+                для предоставления услуг, обеспечения технической поддержки и улучшения
+                функциональности Системы. Все персональные данные обрабатываются в соответствии с
+                Законом Украины «О защите персональных данных» и не передаются третьим лицам без
+                вашего согласия, кроме случаев, предусмотренных законом.
+              </p>
+            </div>
+            <div class="space-y-4">
+              <h5 class="font-avenir-semibold text-base">2.2. Защита данных</h5>
+              <p>
+                Мы используем современные технологии шифрования и защиты для защиты данных от
+                несанкционированного доступа, потери или злоупотребления. ProfiCRM обеспечивает
+                настройку доступа к данным пользователей через систему прав доступа и журнала
+                действий сотрудников. Все транзакции между пользователями и нашими серверами
+                защищены с помощью SSL-шифрования.
+              </p>
+            </div>
+            <div class="space-y-4">
+              <h5 class="font-avenir-semibold text-base">2.3. Права пользователей</h5>
+              <p>Пользователи имеют право:</p>
+              <ul>
+                <li class="ml-10 list-disc">Запрашивать доступ к своим данным;</li>
+                <li class="ml-10 list-disc">
+                  Требовать удаления или исправления персональных данных;
+                </li>
+                <li class="ml-10 list-disc">
+                  Отменить учетную запись в любой момент с возможностью удаления всей информации о
+                  пользователе из системы.
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="space-y-6">
+            <h4 class="font-avenir-semibold text-xl">3. Ограничение ответственности</h4>
+            <div class="space-y-4">
+              <h5 class="font-avenir-semibold text-base">3.1 Технические аспекты</h5>
+              <p>
+                Компания ProfiCRM не несет ответственности за любые потери или убытки, вызванные
+                техническими сбоями, сбоем в работе серверов или неправильной интеграцией с третьими
+                сторонами (маркетплейсами, банковскими сервисами, системами IP-телефонии).
+                Пользователи понимают, что использование сторонних интеграций, таких как ПриватБанк,
+                Монобанк, Rozetka и другие, подпадает под отдельные условия использования этих
+                сервисов.
+              </p>
+            </div>
+            <div class="space-y-4">
+              <h5 class="font-avenir-semibold text-base">3.2. Третьи стороны</h5>
+              <p>
+                ProfiCRM предоставляет интеграции с различными внешними платформами. Компания не
+                несет ответственности за точность или надежность данных, передаваемых через эти
+                сервисы, и рекомендует пользователям ознакомиться с условиями использования
+                соответствующих платформ (Новая почта, Укрпочта, ПриватБанк, Монобанк и т.д.).
+              </p>
+            </div>
+          </div>
+          <div class="space-y-6">
+            <h4 class="font-avenir-semibold text-xl">4. Интеграции с третьими сторонами</h4>
+            <div class="space-y-4">
+              <p>
+                ProfiCRM интегрируется с популярными маркетплейсами и финансовыми сервисами для
+                облегчения обработки заказов и платежей. Среди доступных интеграций:
+              </p>
+              <ul>
+                <li class="ml-10 list-disc">
+                  Маркетплейсы: Etsy, eBay, Amazon, Rozetka, Prom, Allo, Shopify;
+                </li>
+                <li class="ml-10 list-disc">
+                  Системы электронной коммерции: WooCommerce, OpenCart, PrestaShop;
+                </li>
+                <li class="ml-10 list-disc">
+                  Банковские и платежные сервисы: ПриватБанк, Монобанк, LiqPay.
+                </li>
+              </ul>
+              <p>
+                Все интеграции предоставляются для повышения эффективности бизнес-процессов
+                пользователей, однако компания не гарантирует бесперебойную работу сторонних
+                сервисов и не несет ответственности за задержки или технические неисправности на их
+                стороне.
+              </p>
+            </div>
+          </div>
+          <div class="space-y-6">
+            <h4 class="font-avenir-semibold text-xl">5. Право на использование</h4>
+            <div class="space-y-4">
+              <h5 class="font-avenir-semibold text-base">5.1. Лицензионные права</h5>
+              <p>
+                ProfiCRM предоставляет пользователям ограниченную, неисключительную лицензию на
+                использование Системы для личных или бизнес-целей. Запрещается передавать,
+                копировать, изменять или продавать программное обеспечение без нашего разрешения.
+                Любое нарушение этих условий может привести к прекращению доступа к Системе.
+              </p>
+            </div>
+            <div class="space-y-4">
+              <h5 class="font-avenir-semibold text-base">5.2. Прекращение доступа</h5>
+              <p>
+                Компания оставляет за собой право прекратить предоставление услуг в случае нарушения
+                условий использования или неправомерного использования системы пользователем. В
+                таком случае, вся информация о пользователе может быть удалена без предварительного
+                уведомления.
+              </p>
+            </div>
+          </div>
+          <div class="space-y-6">
+            <h4 class="font-avenir-semibold text-xl">6. Плата за использование и тарифы</h4>
+            <p>
+              Использование Системы предоставляется на основе подписки с различными тарифными
+              планами. Отдельные интеграции с маркетплейсами могут требовать дополнительной платы.
+              Все платежи осуществляются через защищенные каналы с использованием интегрированных
+              платежных сервисов.
+            </p>
+          </div>
+          <div class="space-y-6">
+            <h4 class="font-avenir-semibold text-xl">7. Изменения в Условиях использования</h4>
+            <p>
+              Компания оставляет за собой право вносить изменения в эти Условия в любое время.
+              Пользователи будут уведомлены об изменениях через интерфейс Системы или по электронной
+              почте. Продолжая использовать Систему после изменений, вы соглашаетесь с новыми
+              условиями.
+            </p>
+          </div>
+          <div class="space-y-6">
+            <h4 class="font-avenir-semibold text-xl">8. Заключительные положения</h4>
+            <p>
+              Эти Условия регулируются законодательством Украины. Все споры, возникающие в связи с
+              использованием Системы, подлежат разрешению в соответствии с действующим
+              законодательством Украины.
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer id="footer" class="fixed bottom-0 left-0 right-0 z-[-1] bg-primary-bg pb-6 pt-8">
+      <div class="container">
+        <div class="mb-6 flex flex-col justify-between gap-6 lg:flex-row">
+          <div class="space-y-6">
+            <a href="/ru/" class="flex items-center">
+              <svg class="h-8 w-[120px] sm:h-12 sm:w-[180px]" width="180" height="48">
+                <use xlink:href="/sprite.svg#logo"></use>
+              </svg>
+            </a>
+            <nav>
+              <ul class="flex flex-wrap gap-x-8 gap-y-5">
+                <li>
+                  <a href="/ru/tarifs" class="cursor-pointer font-inter-semibold text-white"
+                    >Тарифы</a
+                  >
+                </li>
+                <li>
+                  <a href="/ru/blog" class="cursor-pointer font-inter-semibold text-white"
+                    >Новости</a
+                  >
+                </li>
+                <li>
+                  <a href="/ru/contacts" class="cursor-pointer font-inter-semibold text-white"
+                    >Контакты</a
+                  >
+                </li>
+                <li>
+                  <a href="/ru/terms" class="cursor-pointer font-inter-semibold text-white">
+                    Условия использования
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="flex flex-col justify-between gap-6">
+            <div class="flex lg:justify-end">
+              <a href="/ru/sign-up" class="link link-primary h-10 w-full px-5 xs:w-fit"
+                >15 дней бесплатного доступа</a
+              >
+            </div>
+            <div class="flex flex-col gap-4 sm:flex-row sm:gap-6">
+              <div class="flex items-center gap-2">
+                <svg class="text-white" width="23" height="24">
+                  <use xlink:href="/sprite.svg#phone"></use>
+                </svg>
+                <a href="tel:+380636877486" class="font-inter-semibold text-white"
+                  >+380 63 687 74 86
+                </a>
+              </div>
+              <div class="flex items-center gap-2">
+                <svg class="text-white" width="22" height="19">
+                  <use xlink:href="/sprite.svg#mail"></use>
+                </svg>
+                <a href="mailto:proficrmsupport@gmail.com" class="font-inter-semibold text-white"
+                  >proficrmsupport@gmail.com
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="flex flex-col items-center gap-4 border-t border-solid border-stroke pt-4 sm:flex-row sm:justify-between sm:pt-6"
+        >
+          <p class="text-base text-white">© 2024 ProfiCRM. All rights reserved.</p>
+          <a
+            href="https://t.me/proficrm_com"
+            target="_blank"
+            class="block transition-transform hover:scale-105 sm:mr-14"
+          >
+            <svg class="text-white" width="24" height="24">
+              <use xlink:href="/sprite.svg#telegram"></use>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- TELEGRAM BUTTON -->
+    <a
+      href="https://t.me/proficrm_support"
+      target="_blank"
+      class="fixed bottom-3 right-3 z-[1000] hidden transition-transform hover:scale-105"
+      data-telegram-btn
+    >
+      <svg width="44" height="44">
+        <use xlink:href="/sprite.svg#preview-telegram"></use>
+      </svg>
+    </a>
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

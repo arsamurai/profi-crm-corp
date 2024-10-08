@@ -14,7 +14,7 @@
     >
       <div class="container">
         <div class="flex items-center justify-between">
-          <a href="/ua/">
+          <a href="/ru/">
             <svg class="h-8 w-[120px] sm:h-12 sm:w-[180px]" width="180" height="48">
               <use xlink:href="/sprite.svg#logo"></use>
             </svg>
@@ -27,18 +27,18 @@
               class="flex h-fit flex-col justify-center gap-8 lg:flex-row lg:items-center lg:gap-10"
             >
               <li class="text-center">
-                <a href="/ua/tarifs" class="menu-link" data-menu-link>Тарифи</a>
+                <a href="/ru/tarifs" class="menu-link" data-menu-link>Тарифы</a>
               </li>
               <li class="text-center">
-                <a href="/ua/blog" class="menu-link" data-menu-link>Новини</a>
+                <a href="/ru/blog" class="menu-link" data-menu-link>Новости</a>
               </li>
               <li class="text-center">
-                <a href="/ua/contacts" class="menu-link" data-menu-link>Контакти</a>
+                <a href="/ru/contacts" class="menu-link" data-menu-link>Контакты</a>
               </li>
             </ul>
             <div class="mx-auto flex flex-col gap-4 lg:hidden">
-              <a href="/ua/sign-up" class="link link-primary h-10 w-full px-5"
-                >15 днів безкоштовного доступу
+              <a href="/ru/sign-up" class="link link-primary h-10 w-full px-5"
+                >15 дней бесплатного доступа
               </a>
             </div>
             <svg class="absolute left-0 top-0 lg:hidden" width="150" height="122">
@@ -50,8 +50,8 @@
           </nav>
           <div class="flex items-center gap-6">
             <div class="hidden lg:block">
-              <a href="/ua/sign-up" class="link link-primary h-10 w-full px-5 sm:w-fit"
-                >15 днів безкоштовного доступу
+              <a href="/ru/sign-up" class="link link-primary h-10 w-full px-5 sm:w-fit"
+                >15 дней бесплатного доступа
               </a>
             </div>
             <div class="relative" data-twe-dropdown-ref>
@@ -67,7 +67,7 @@
                     <use xlink:href="/sprite.svg#world"></use>
                   </svg>
                 </span>
-                ua
+                ru
               </button>
               <ul
                 class="absolute z-[1000] float-left m-0 hidden min-w-max list-none overflow-hidden rounded-lg border border-solid border-stroke bg-primary-bg bg-clip-padding py-2 data-[twe-dropdown-show]:block"
@@ -77,7 +77,7 @@
                 <li>
                   <a
                     class="block w-full whitespace-nowrap bg-primary-bg px-4 py-2 text-sm transition-colors hover:bg-hovered hover:text-white focus:bg-focused focus:outline-none"
-                    href="/ua/sign-up"
+                    href="/ua/contacts"
                     data-twe-dropdown-item-ref
                     >ua</a
                   >
@@ -85,14 +85,14 @@
                 <li>
                   <a
                     class="block w-full whitespace-nowrap bg-primary-bg px-4 py-2 text-sm transition-colors hover:bg-hovered hover:text-white focus:bg-focused focus:outline-none"
-                    href="/ru/sign-up"
+                    href="/ru/contacts"
                     data-twe-dropdown-item-ref
                     >ru</a
                   >
                 </li>
               </ul>
             </div>
-            <a href="/ua/sign-up" class="lg:hidden">
+            <a href="/ru/sign-up" class="lg:hidden">
               <svg width="16" height="18">
                 <use xlink:href="/sprite.svg#person"></use>
               </svg>
@@ -114,67 +114,71 @@
       </div>
     </header>
 
-    <main id="registration-page" class="grid gap-8 sm:grid-cols-2 sm:gap-6">
-      <div
-        class="relative flex w-full items-center justify-center px-4 pt-6 sm:h-[calc(100vh-81px)] sm:min-h-[600px] sm:pr-0"
-      >
-        <form
-          action="#"
-          id="registration-form"
-          class="w-full max-w-[400px] space-y-4 sm:-mt-28 sm:space-y-5"
-        >
-          <h1 class="font-avenir-semibold text-2xl">Реєстрація</h1>
-          <div class="space-y-1.5">
-            <label for="name" class="block select-none text-sm">Ім'я</label>
-            <input
-              id="name"
-              type="text"
-              placeholder="Ваше ім'я"
-              required
-              class="flex h-12 w-full rounded-xl border border-solid border-transparent bg-primary-bg px-3.5 py-3 text-base shadow-shadow-primary outline-none placeholder:text-gray"
-            />
+    <main id="contacts-page" class="grid pt-6 sm:pt-9 xl:pt-12">
+      <div class="container">
+        <div class="mb-10 sm:w-5/12">
+          <h1 class="mb-4 font-avenir-semibold text-2xl xs:text-4xl sm:mb-6 sm:text-5xl">
+            Контакты
+          </h1>
+          <ul class="mb-6 space-y-5 sm:mb-12">
+            <li>
+              <a href="tel:+380636877486" class="flex w-fit items-center gap-2 font-avenir-medium">
+                <svg class="text-primary" width="23" height="24">
+                  <use xlink:href="/sprite.svg#phone"></use>
+                </svg>
+                <span> +380 63 687 74 86 </span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="mailto:proficrmsupport@gmail.com"
+                class="flex w-fit items-center gap-2 font-avenir-medium"
+              >
+                <svg class="text-primary" width="24" height="24">
+                  <use xlink:href="/sprite.svg#mail"></use>
+                </svg>
+                <span> proficrmsupport@gmail.com </span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://t.me/proficrm_com"
+                target="_blank"
+                class="flex w-fit items-center gap-2 font-avenir-medium"
+              >
+                <svg class="text-primary" width="23" height="24">
+                  <use xlink:href="/sprite.svg#telegram"></use>
+                </svg>
+                <span>Telegram канал</span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://t.me/proficrm_support"
+                target="_blank"
+                class="flex w-fit items-center gap-2 font-avenir-medium"
+              >
+                <svg class="text-primary" width="23" height="24">
+                  <use xlink:href="/sprite.svg#telegram"></use>
+                </svg>
+                <span>Telegram менеджера</span>
+              </a>
+            </li>
+          </ul>
+          <div class="space-y-3 sm:space-y-4">
+            <p class="block-title font-avenir-semibold tracking-[0.02em]">Не нашли ответ?</p>
+            <button
+              type="button"
+              class="link link-primary h-12 px-9"
+              data-twe-toggle="modal"
+              data-twe-target="#application-modal"
+            >
+              Связаться
+            </button>
           </div>
-          <div class="space-y-1.5">
-            <label for="phone" class="block select-none text-sm">Телефон</label>
-            <input
-              id="phone"
-              type="tel"
-              placeholder="+38 (ХХХ) ХХХ ХХ ХХ"
-              required
-              class="flex h-12 w-full rounded-xl border border-solid border-transparent bg-primary-bg px-3.5 py-3 text-base shadow-shadow-primary outline-none placeholder:text-gray"
-            />
-          </div>
-          <div class="space-y-1.5">
-            <label for="telegram" class="block select-none text-sm">Пошта</label>
-            <input
-              id="email"
-              type="email"
-              placeholder="mail@gmail.com"
-              required
-              class="flex h-12 w-full rounded-xl border border-solid border-transparent bg-primary-bg px-3.5 py-3 text-base shadow-shadow-primary outline-none placeholder:text-gray"
-            />
-          </div>
-          <div class="space-y-1.5">
-            <label for="telegram" class="block select-none text-sm">Назва CRM</label>
-            <input
-              id="crmName"
-              type="text"
-              placeholder=".profi-crm.com"
-              class="flex h-12 w-full rounded-xl border border-solid border-transparent bg-primary-bg px-3.5 py-3 text-base shadow-shadow-primary outline-none placeholder:text-gray"
-            />
-          </div>
-          <button type="submit" class="link link-primary h-12 w-full sm:h-14">
-            Зареєструватись
-          </button>
-        </form>
-        <div
-          class="absolute bottom-0 left-0 hidden w-full justify-between p-4 pr-0 text-sm text-gray sm:flex lg:p-8"
-        >
-          <p>© Profi CRM 2024</p>
-          <a href="#">Privacy</a>
         </div>
       </div>
-      <div class="sm:h-[calc(100vh-81px)] sm:min-h-[600px] sm:w-full">
+      <div class="bottom-0 right-0 sm:absolute sm:top-20 sm:min-h-[500px] sm:w-6/12">
         <img
           src="/images/contacts.png"
           alt="contacts-img"
@@ -183,13 +187,81 @@
       </div>
     </main>
 
-    <!-- SUCCESS ALERT -->
+    <!-- APPLICATION MODAL -->
     <div
-      id="registration-success"
+      id="application-modal"
       data-twe-modal-init
       class="fixed left-0 top-0 z-[1055] hidden h-full w-full overflow-y-auto overflow-x-hidden outline-none"
       tabindex="-1"
-      aria-labelledby="registration-success-label"
+      aria-labelledby="application-modal-label"
+      aria-hidden="true"
+    >
+      <div
+        data-twe-modal-dialog-ref
+        class="pointer-events-none relative flex min-h-[calc(100%-1rem)] w-auto translate-y-[-50px] items-center p-4 opacity-0 transition-all duration-300 ease-in-out sm:mx-auto sm:max-w-[550px]"
+      >
+        <div
+          class="pointer-events-auto relative flex w-full items-center justify-between rounded-[32px] border border-solid border-stroke bg-black bg-clip-padding px-4 py-6 outline-none sm:px-8 sm:py-12"
+        >
+          <form action="#" id="contacts-form" class="w-full space-y-5">
+            <h2
+              id="application-modal-label"
+              class="px-10 text-center font-avenir-semibold text-xl sm:text-2xl"
+            >
+              Не нашли ответ?
+            </h2>
+            <div class="space-y-1.5">
+              <label for="name" class="block select-none text-sm">Имя</label>
+              <input
+                id="name"
+                type="text"
+                placeholder="Ваше ім'я"
+                required
+                class="flex h-12 w-full rounded-xl border border-solid border-transparent bg-primary-bg px-3.5 py-3 text-base shadow-shadow-primary outline-none placeholder:text-gray"
+              />
+            </div>
+            <div class="space-y-1.5">
+              <label for="phone" class="block select-none text-sm">Телефон</label>
+              <input
+                id="phone"
+                type="tel"
+                placeholder="+38 (ХХХ) ХХХ ХХ ХХ"
+                required
+                class="flex h-12 w-full rounded-xl border border-solid border-transparent bg-primary-bg px-3.5 py-3 text-base shadow-shadow-primary outline-none placeholder:text-gray"
+              />
+            </div>
+            <div class="space-y-1.5">
+              <label for="telegram" class="block select-none text-sm">Телеграм</label>
+              <input
+                id="telegram"
+                type="text"
+                placeholder="@nickname"
+                class="flex h-12 w-full rounded-xl border border-solid border-transparent bg-primary-bg px-3.5 py-3 text-base shadow-shadow-primary outline-none placeholder:text-gray"
+              />
+            </div>
+            <button type="submit" class="link link-primary h-12 w-full sm:h-14">Связаться</button>
+          </form>
+          <button
+            type="button"
+            class="absolute right-4 top-4 box-content rounded-none border-none text-gray transition-colors hover:text-primary hover:no-underline focus:text-primary focus:outline-none sm:right-8 sm:top-8"
+            data-twe-modal-dismiss
+            aria-label="Close"
+          >
+            <svg width="32" height="32">
+              <use xlink:href="/sprite.svg#close"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- SUCCESS ALERT -->
+    <div
+      id="application-success"
+      data-twe-modal-init
+      class="fixed left-0 top-0 z-[1055] hidden h-full w-full overflow-y-auto overflow-x-hidden outline-none"
+      tabindex="-1"
+      aria-labelledby="application-success-label"
       aria-hidden="true"
     >
       <div
@@ -201,19 +273,19 @@
         >
           <div class="w-full space-y-5 text-center">
             <h2
-              id="registration-success-label"
+              id="application-success-label"
               class="px-10 text-center font-avenir-semibold text-xl sm:text-2xl"
             >
-              Заявка успішно отримана
+              Заявка успешно получена
             </h2>
-            <p class="text-sm">Ми надішлемо логін та пароль на вказану Вами пошту</p>
+            <p class="text-sm">Менеджер свяжется с Вами в ближайшее время</p>
             <button
               type="button"
               class="link link-primary mx-auto h-12 w-fit px-16 sm:h-14"
               data-twe-modal-dismiss
               aria-label="Close"
             >
-              Зрозуміло
+              Понятно
             </button>
           </div>
           <button
@@ -232,11 +304,11 @@
 
     <!-- ERROR ALERT -->
     <div
-      id="registration-error"
+      id="application-error"
       data-twe-modal-init
       class="fixed left-0 top-0 z-[1055] hidden h-full w-full overflow-y-auto overflow-x-hidden outline-none"
       tabindex="-1"
-      aria-labelledby="registration-error-label"
+      aria-labelledby="application-error-label"
       aria-hidden="true"
     >
       <div
@@ -247,17 +319,17 @@
           class="pointer-events-auto relative flex w-full items-center justify-between rounded-[32px] border border-solid border-stroke bg-black bg-clip-padding px-4 py-6 outline-none sm:px-8 sm:py-12"
         >
           <div class="w-full space-y-5 text-center">
-            <h2 id="registration-error-label" class="font-avenir-semibold text-xl sm:text-2xl">
-              Щось пішло не так...
+            <h2 id="application-error-label" class="font-avenir-semibold text-xl sm:text-2xl">
+              Что-то пошло не так...
             </h2>
-            <p class="text-sm">Спробуйте, будь ласка, відправити заявку пізніше</p>
+            <p class="text-sm">Попробуйте, пожалуйста, отправить заявку позже</p>
             <button
               type="button"
               class="link link-primary mx-auto h-12 w-fit px-16 sm:h-14"
               data-twe-modal-dismiss
               aria-label="Close"
             >
-              Зрозуміло
+              Понятно
             </button>
           </div>
           <button
