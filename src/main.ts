@@ -4,6 +4,9 @@ import "./tw-elements/accordion"
 import "./tw-elements/modal"
 import "./tw-elements/tabs"
 
+// Libs
+import "./libs/aos"
+
 // Components
 import "./components/mask"
 import "./components/burger"
@@ -17,5 +20,5 @@ import "./components/move-img"
 import "./components/counter"
 import "./components/telegram-btn"
 
-//
+// Styles
 import "./style.css"
