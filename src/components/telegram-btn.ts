@@ -5,12 +5,14 @@ window.addEventListener("DOMContentLoaded", () => {
   const handleScroll = () => {
     const scrollPosition = window.scrollY
     const previewHeight = preview?.offsetHeight ?? 0
+    const showButton =
+      !previewHeight || scrollPosition > previewHeight || (previewHeight && window.innerWidth < 768)
 
     if (!button) {
       return
     }
 
-    if (!previewHeight || scrollPosition > previewHeight) {
+    if (showButton) {
       button.classList.remove("hidden")
     } else {
       button.classList.add("hidden")
